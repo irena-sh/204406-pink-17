@@ -1,0 +1,13 @@
+﻿.photo-editor__in {
+  @include container;
+}
+
+.photo-editor__form {
+    background-color: transparent;
+  }
+
+.photo-editor__form {
+  padding-top: 20px;
+  padding-bottom: 41px;
+  background-color: $grey-light;
+}

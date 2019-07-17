@@ -1,0 +1,10 @@
+﻿.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.post-list__item {
+  margin-top: 20px;
+  width: 280px;
+}

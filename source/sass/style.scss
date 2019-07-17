@@ -1,0 +1,34 @@
+﻿@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/fonts.scss";
+@import "global/page.scss";
+
+@import "blocks/main-nav.scss";
+@import "blocks/sr-only.scss";
+@import "blocks/page-header.scss";
+
+@import "blocks/advantages.scss";
+@import "blocks/opening.scss";
+@import "blocks/flip.scss";
+@import "blocks/contacts.scss";
+@import "blocks/download.scss";
+@import "blocks/reviews.scss";
+@import "blocks/prices.scss";
+
+@import "blocks/photo-editor.scss";
+@import "blocks/gallery.scss";
+@import "blocks/panorama.scss";
+@import "blocks/photo.scss";
+@import "blocks/upload-photo.scss";
+@import "blocks/photo-list.scss";
+
+@import "blocks/field-text.scss";
+@import "blocks/contest.scss";
+@import "blocks/contest-form.scss";
+@import "blocks/form-section.scss";
+@import "blocks/field-checkbox.scss";
+@import "blocks/field-text.scss";
+@import "blocks/radio-field.scss";
+
+@import "blocks/page-footer.scss";
