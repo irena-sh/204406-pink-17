@@ -1,12 +1,12 @@
 .advantages {
   @include container;
   padding-top: 43px;
-  padding-right: 0px;
+  // padding-right: 0px;
   padding-left: 0px;
 }
 
 .advantages__lead {
-  margin-bottom: 31px
+  margin-bottom: 31px;
 }
 
 .advantages__promo {
@@ -26,9 +26,10 @@
   position: relative;
   background-color: $grey-light;
   padding-top: 86px;
+
   @include angled-bg($height: 31px)
 
-  &::after {
+    &::after {
     content: "";
     position: relative;
     display: block;
