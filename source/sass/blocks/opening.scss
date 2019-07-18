@@ -4,7 +4,8 @@
   background-repeat: no-repeat;
   background-position: center top;
   color: $white;
-  min-height: 237px;
+  min-height: 170px;
+  // @include container;
 
   &--index {
     padding: 0;
@@ -13,8 +14,8 @@
 
 .opening__in {
   @include container;
-  padding-top: 100px;
-  padding-bottom: 38px;
+  padding-top: 25px;
+  padding-left: 0px;
 
   &--index {
     padding: 0;
@@ -36,6 +37,6 @@
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
-  // margin: 0;
+  margin: 0;
   text-align: center;
 }
