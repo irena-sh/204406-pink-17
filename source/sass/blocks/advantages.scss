@@ -1,12 +1,12 @@
 .advantages {
-  @include container;
+  // @include container;
   padding-top: 43px;
-  // padding-right: 0px;
-  padding-left: 0px;
 }
 
 .advantages__lead {
   margin-bottom: 31px;
+
+  @include container;
 }
 
 .advantages__promo {
