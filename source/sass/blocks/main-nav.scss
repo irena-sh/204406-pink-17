@@ -1,4 +1,4 @@
-﻿.main-nav__toggle {
+.main-nav__toggle {
   position: absolute;
   top: 21px;
   right: 815px;
@@ -16,7 +16,7 @@
   border-top: 1px solid #000;
 }
 
-.main-nav__menu a {
+.main-nav__link {
   display: block;
   margin: 0;
   background-color: $blue-dark;
