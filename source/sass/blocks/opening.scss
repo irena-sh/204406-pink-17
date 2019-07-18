@@ -15,14 +15,14 @@
 .opening__in {
   @include container;
   padding-top: 25px;
-  padding-left: 0px;
+  padding-left: 1px;
 
   &--index {
     padding: 0;
   }
 
   &--index::before {
-    content: '';
+    content: "";
     display: block;
     position: relative;
     min-height: 462px;

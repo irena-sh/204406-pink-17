@@ -3,10 +3,9 @@
   background-color: $grey-light;
   padding-top: 91px;
   padding-bottom: 47px;
+
   @include angled-bg;
   @include container;
-  padding-right: 0px;
-  padding-left: 0px;
 }
 
 .prices-option {
