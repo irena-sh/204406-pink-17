@@ -1,0 +1,51 @@
+.contacts {
+  @include container;
+  padding-top: 43px;
+  text-align: center;
+}
+
+.conacts__title {
+  margin-bottom: 35px;
+}
+
+.contacts__text {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.contacts__undertext {
+  display: block;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-list__item {
+  margin-bottom: 22px;
+}
+
+.contacts-list__name {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.contacts-list__phone {
+  color: $pink;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $black;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,37 @@
+.reviews {
+  padding-top: 48px;
+  padding-bottom: 43px;
+}
+
+.reviews__in {
+  @include container;
+}
+
+.reviews__list {
+  @include reset-list;
+}
+
+.reviews__item {
+  display: none;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews__item:first-child {
+  display: block;
+}
+
+.reviews__author {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black;
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.reviews__text {
+  margin-top: 17px;
+  margin-bottom: 0;
+}
