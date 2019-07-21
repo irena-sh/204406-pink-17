@@ -1,10 +1,112 @@
-.photo {
+.photo__panorama {
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: $phones-max) {
+    @include container-phones;
+  }
+}
+
+.photo__panorama img {
+  display: block;
+
+  @media (min-width: $tablets) {
+    position: relative;
+    height: 509px;
+    width: auto;
+    max-width: inherit;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktops) {
+    height: 506px;
+  }
+}
+
+.photo__section-wrapper {
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 100%;
+}
+
+.photo__section-in {
+  @include container;
+  text-align: right;
+
+  @media (min-width: $tablets) {
+    padding-top: 57px;
+  }
+
+  @media (min-width: $desktops) {
+    padding-top: 54px;
+  }
+}
+
+.photo__section-name {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white;
+  background-color: $pink;
+  text-transform: uppercase;
+  padding: 6px 20px;
+}
+
+.photo--card {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  width: 280px;
+
+  @media (min-width: $tablets) {
+    width: 300px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $tablets) and (max-width: $tablets-max) {
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 40px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.photo__image {
+  @media (min-width: $tablets) {
+    overflow: hidden;
+  }
 }
 
 .photo__image img {
   display: block;
+
+  @media (min-width: $tablets) {
+    position: relative;
+    height: 300px;
+    width: auto;
+    max-width: inherit;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktops) {
+    height: 400px;
+  }
+}
+
+.photo__description-wrapper {
+  @include container;
 }
 
 .photo__description {
@@ -30,12 +132,21 @@
   font-weight: 300;
 }
 
-.photo__like {
+.photo__action {
+  font-size: 0;
   margin-top: 18px;
+  position: relative;
 }
 
 .photo__stats {
+  display: inline-block;
+  vertical-align: top;
   font-size: 12px;
   text-transform: uppercase;
   color: $pink;
+}
+
+.photo__like-btn {
+  display: inline;
+  margin-right: 18px;
 }
