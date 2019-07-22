@@ -9,18 +9,18 @@
     <header class="page-header page-header--full">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
+          <img  class="page-header__img"src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
         </a>
-      <nav class="main-nav main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><span class="main-nav__button"></span></button>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="main-nav__button"></span></button>
           <ul class="main-nav__menu">
             <li class="main-nav__item"><a class ="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item main-nav__item--active"><a class ="main-nav__link" href="photo.html">Фотографии</a></li>
             <li class="main-nav__item"><a class ="main-nav__link" href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a class ="main-nav__link" href="http://www.htmlacademy.ru">HTML ACADEMY</a></li>
           </ul>
-      </nav>
-    </div>
+        </nav>
+      </div>
     </header>
     <main class="content-gallery">
       <header class="opening opening--short">
@@ -65,7 +65,7 @@
           <div class ="photo-list">
             <article class="photo  photo--card">
               <div class="photo__image">
-                <img src="img/photo-car-mobile@1x.jpg" alt="Левон" width="280" height="180">
+                <img class="photo__pic" src="img/photo-car-mobile@1x.jpg" alt="Левон" width="280" height="180">
               </div>
               <div class="photo__description">
                 <header class="photo__header">
@@ -86,7 +86,7 @@
             </article>
             <article class="photo  photo--card">
               <div class="photo__image">
-                <img src="img/photo-drumset-mobile@1x.jpg" alt="Антон" width="280" height="180">
+                <img class="photo__pic" src="img/photo-drumset-mobile@1x.jpg" alt="Антон" width="280" height="180">
               </div>
               <div class="photo__description">
                 <header class="photo__header">
@@ -107,7 +107,7 @@
             </article>
             <article class="photo  photo--card">
               <div class="photo__image">
-                <img src="img/photo-window-mobile@1x.jpg" alt="Борис" width="280" height="180">
+                <img class="photo__pic" src="img/photo-window-mobile@1x.jpg" alt="Борис" width="280" height="180">
               </div>
               <div class="photo__description">
                 <header class="photo__header">
@@ -128,7 +128,7 @@
             </article>
             <article class="photo  photo--card">
               <div class="photo__image">
-                <img src="img/photo-fair-mobile@1x.jpg" alt="Сергей" width="280" height="180">
+                <img class="photo__pic" src="img/photo-fair-mobile@1x.jpg" alt="Сергей" width="280" height="180">
               </div>
               <div class="photo__description">
                 <header class="photo__header">
@@ -149,7 +149,7 @@
             </article>
             <article class="photo  photo--card">
               <div class="photo__image">
-                <img src="img/photo-pov-mobile@1x.jpg" alt="Максим" width="280" height="180">
+                <img class="photo__pic" src="img/photo-pov-mobile@1x.jpg" alt="Максим" width="280" height="180">
               </div>
               <div class="photo__description">
                 <header class="photo__header">
@@ -170,7 +170,7 @@
             </article>
             <article class="photo  photo--card">
               <div class="photo__image">
-                <img src="img/photo-wing-mobile@1x.jpg" alt="Надежда" width="280" height="180">
+                <img class="photo__pic" src="img/photo-wing-mobile@1x.jpg" alt="Надежда" width="280" height="180">
               </div>
               <div class="photo__description">
                 <header class="photo__header">
@@ -204,65 +204,65 @@
         <div class="photo-editor__in">
           <form class="photo-editor__form" method="post" action="http://echo.htmlacademy.ru">
             <figure class="photo-editor__image">
-              <img src="img/photo-road-mobile@1x.jpg" alt="Изображение" width="280" height="374">
+              <img class="photo-editor__pic" src="img/photo-road-mobile@1x.jpg" alt="Изображение" width="280" height="374">
             </figure>
             <div class="photo-editor__fields">
               <div class="photo-editor__tools-wrapper">
-              <ul class="photo-editor__options">
-                <li class="photo-editor__options-item">
-                  <div class="photo-editor__tab">
-                        <span class="photo-editor__tool-name">
-                          <img src="img/icon-editor-crop.svg" alt="">
-                          Обрезка
-                        </span>
+                <ul class="photo-editor__options">
+                  <li class="photo-editor__options-item">
+                    <div class="photo-editor__tab">
+                      <span class="photo-editor__tool-name">
+                        <img src="img/icon-editor-crop.svg" alt="">
+                        Обрезка
+                      </span>
+                    </div>
+                    <div class="photo-editor__control">
+                      <div class="photo-editor__range">
+                        <div class="photo-editor__range-scale"><div class="photo-editor__range-value" style="width: 84%"></div></div>
+                        <div class="photo-editor__range-btn"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="photo-editor__options-item">
+                    <div class="photo-editor__tab">
+                      <span class="photo-editor__tool-name">
+                        <img src="img/icon-editor-fill.svg" alt="">
+                        Цветокоррекция
+                      </span>
+                    </div>
+                    <div class="photo-editor__control">
+                      <div class="photo-editor__range">
+                        <div class="photo-editor__range-scale"><div class="photo-editor__range-value" style="width: 84%"></div></div>
+                        <div class="photo-editor__range-btn"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="photo-editor__options-item">
+                    <div class="photo-editor__tab">
+                      <span class="photo-editor__tool-name">
+                        <img src="img/icon-editor-contrast.svg" alt="">
+                        Контраст
+                      </span>
+                    </div>
+                    <div class="photo-editor__control">
+                      <div class="photo-editor__range">
+                        <div class="photo-editor__range-scale"><div class="photo-editor__range-value" style="width: 84%"></div></div>
+                        <div class="photo-editor__range-btn"></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="photo-editor__btns">
+                <div class="photo-editor__btns-in">
+                  <button class="photo-editor__post btn btn--post" type="submit">Запостить</button>
+                  <button class="photo-editor__cansel btn btn--cancel" type="reset">Отмена</button>
                 </div>
-                <div class="photo-editor__control">
-                        <div class="photo-editor__range">
-                          <div class="photo-editor__range-scale"><div class="photo-editor__range-value" style="width: 84%"></div></div>
-                          <div class="photo-editor__range-btn"></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="photo-editor__options-item">
-                      <div class="photo-editor__tab">
-                        <span class="photo-editor__tool-name">
-                          <img src="img/icon-editor-fill.svg" alt="">
-                          Цветокоррекция
-                        </span>
-                      </div>
-                      <div class="photo-editor__control">
-                        <div class="photo-editor__range">
-                          <div class="photo-editor__range-scale"><div class="photo-editor__range-value" style="width: 84%"></div></div>
-                          <div class="photo-editor__range-btn"></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="photo-editor__options-item">
-                      <div class="photo-editor__tab">
-                        <span class="photo-editor__tool-name">
-                          <img src="img/icon-editor-contrast.svg" alt="">
-                          Контраст
-                        </span>
-                      </div>
-                      <div class="photo-editor__control">
-                        <div class="photo-editor__range">
-                          <div class="photo-editor__range-scale"><div class="photo-editor__range-value" style="width: 84%"></div></div>
-                          <div class="photo-editor__range-btn"></div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="photo-editor__btns">
-                  <div class="photo-editor__btns-in">
-              <button class="photo-editor__post btn btn--post" type="submit">Запостить</button>
-              <button class="photo-editor__cansel btn btn--cancel" type="reset">Отмена</button>
-            </div>
+              </div>
             </div>
           </form>
         </div>
       </div>
-    </div>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
@@ -281,6 +281,5 @@
         </a>
       </div>
     </footer>
-    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

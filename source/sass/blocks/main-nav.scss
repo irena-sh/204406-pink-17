@@ -26,7 +26,7 @@
   line-height: 32px;
   padding: 16px 20px;
   box-shadow: 0 -1px 0 $black,
-              inset 0 1px 0 rgba($white, 0.15);
+    inset 0 1px 0 rgba($white, 0.15);
 
   &[href]:hover,
   &[href]:focus {
@@ -35,14 +35,6 @@
 
   &[href]:active {
     color: rgba($white, 0.3);
-  }
-}
-
-.main-nav__item:last-child a {
-  @media (max-width: $tablets-max) {
-    box-shadow: 0 -1px 0 $black,
-                inset 0 1px 0 rgba($white, 0.15),
-                inset 0 -1px 0 $black;
   }
 }
 
@@ -108,32 +100,6 @@
   }
 }
 
-.main-nav__toggle:hover span,
-.main-nav__toggle:hover span::before,
-.main-nav__toggle:hover span::after {
-  background-color: $pink;
-}
-
-.main-nav__toggle:active span,
-.main-nav__toggle:active span::before,
-.main-nav__toggle:active span::after {
-  background: rgba($pink, 0.3);
-}
-
-@media (max-width: $tablets-max) {
-  .main-nav--closed .main-nav__menu {
-    display: none;
-  }
-
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav--nojs .main-nav__menu {
-    display: block;
-  }
-}
-
 @media (min-width: $tablets) {
   .main-nav__toggle {
     top: 44px;
@@ -154,7 +120,7 @@
   }
 
   .page-header__wrapper {
-    // @include container;
+    @include container;
   }
 
   .main-nav__menu {

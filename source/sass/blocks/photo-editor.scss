@@ -45,7 +45,7 @@
   }
 }
 
-.photo-editor__image img {
+.photo-editor__pic {
   display: block;
   margin: 0;
 
@@ -203,7 +203,7 @@
 
   @media (max-width: $phones-max) {
     &::before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       top: -1px;

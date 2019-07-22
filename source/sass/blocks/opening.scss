@@ -86,14 +86,14 @@
   &--gallery {
     @media (min-width: $desktops) {
       padding-left: 200px;
-      padding-right: 200px
+      padding-right: 200px;
     }
   }
 
   &--contest {
     @media (min-width: $desktops) {
       padding-left: 90px;
-      padding-right: 90px
+      padding-right: 90px;
     }
   }
 }

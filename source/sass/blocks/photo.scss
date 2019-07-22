@@ -27,7 +27,7 @@
 .photo__section-wrapper {
   position: absolute;
   top: 0;
-  right:0;
+  right: 0;
   width: 100%;
 }
 
@@ -88,7 +88,7 @@
   }
 }
 
-.photo__image img {
+.photo__pic {
   display: block;
 
   @media (min-width: $tablets) {

@@ -190,15 +190,6 @@
   }
 }
 
-.advantages__item p {
-  margin-top: 17px;
-  margin-bottom: 0;
-
-  @media (min-width: $desktops) {
-    margin-top: 25px;
-  }
-}
-
 .advantages__text {
   margin-top: 17px;
   margin-bottom: 0;
@@ -220,7 +211,7 @@
 
   @media (min-width: $desktops) {
     background-color: $grey-light;
-    padding-top: 0px;
+    // padding-top: 0px;
     padding-bottom: 67px;
     min-height: 410px;
   }
@@ -261,7 +252,7 @@
   }
 }
 
-.advantages__research-title p {
+.advantages__research-desc {
   margin-top: 0;
   margin-bottom: 18px;
 
