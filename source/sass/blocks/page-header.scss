@@ -1,12 +1,13 @@
 .page-header {
-  background-color: $blue-dark;
+  position: absolute;
+  background-color: rgba($black, 0.3);
   color: $white;
   width: 100%;
-  min-height: 70px;
-  // padding-right: 0px;
-  // padding-left: 0px;
+  z-index: 2;
 
-  @include container;
+  @media (min-width: $tablets) {
+    min-height: 110px;
+  }
 }
 
 .page-header__logo {
@@ -14,7 +15,41 @@
   display: inline-block;
   vertical-align: top;
   margin-top: 22px;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media (max-width: $tablets-max) {
+  .page-header--full {
+    position: relative;
+    background-color: $blue-dark;
+  }
+}
+
+@media (min-width: $tablets) {
+  .page-header {
+    min-height: 110px;
+  }
+
+  .page-header__logo {
+    height: 40px;
+    margin-top: 27px;
+    margin-bottom: 43px;
+  }
+
+  .page-header__img {
+    padding-top: 17px;
+  }
+}
+
+.page-header__wrapper {
+  width: 100%;
+
+  @media (min-width: $desktops) {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
 }
