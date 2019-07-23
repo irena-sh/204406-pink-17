@@ -7,7 +7,7 @@
   }
 }
 
-.photo__panorama img {
+.photo__panorama-pic {
   display: block;
 
   @media (min-width: $tablets) {
@@ -24,27 +24,10 @@
   }
 }
 
-.photo__section-wrapper {
+.photo__section-name {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 100%;
-}
-
-.photo__section-in {
-  @include container;
-  text-align: right;
-
-  @media (min-width: $tablets) {
-    padding-top: 57px;
-  }
-
-  @media (min-width: $desktops) {
-    padding-top: 54px;
-  }
-}
-
-.photo__section-name {
+  left: 50%;
   display: inline-block;
   vertical-align: top;
   font-size: 12px;
@@ -54,6 +37,16 @@
   background-color: $pink;
   text-transform: uppercase;
   padding: 6px 20px;
+
+  @media (min-width: $tablets) {
+    transform: translateX(170px);
+    top: 57px;
+  }
+
+  @media (min-width: $desktops) {
+    transform: translateX(330px);
+    top: 54px;
+  }
 }
 
 .photo--card {

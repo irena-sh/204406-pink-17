@@ -15,9 +15,7 @@
   @media (min-width: $desktops) {
     padding: 109px 0;
   }
-}
 
-.download__in {
   @media (max-width: $phones-max) {
     @include container-phones (20px);
   }
