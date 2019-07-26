@@ -119,3 +119,16 @@
     text-decoration: underline;
   }
 }
+
+.contacts__map {
+  height: 200px;
+  background: url(../img/bg-map-mobile@1x.png) no-repeat center;
+
+  @media (min-width: $tablets) {
+    height: 372px;
+  }
+
+  @media (min-width: $tablets) {
+    height: 502px;
+  }
+}
