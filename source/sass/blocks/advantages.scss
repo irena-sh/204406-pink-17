@@ -60,7 +60,7 @@
 .advantages__wrapper {
   @include angled-bg ($height: 31px, $top: 0);
   position: relative;
-  padding-top: 86px;
+  padding-top: 80px;
 
   @media (min-width: $tablets) {
     @include angled-bg ($height: 51px, $top: 0);
@@ -68,8 +68,8 @@
   }
 
   @media (min-width: $desktops) {
-    @include angled-bg ($height: 74px, $top: 87px);
-    padding-top: 75px;
+    @include angled-bg ($height: 131px, $top: 7px);
+    padding-top: 25px;
   }
 }
 
@@ -95,7 +95,7 @@
   @media (min-width: $tablets) {
     padding-left: 50%;
     text-align: left;
-    padding-bottom: 40px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: $desktops) {
@@ -202,7 +202,6 @@
 
   @media (min-width: $tablets) {
     padding-top: 60px;
-    min-height: 335px;
   }
 
   @media (min-width: $desktops) {
