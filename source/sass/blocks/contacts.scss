@@ -118,7 +118,6 @@
   color: $pink;
   font-size: 24px;
   line-height: 30px;
-  line-height: normal;
   font-weight: 300;
   font-style: normal;
   text-decoration: none;
@@ -132,13 +131,9 @@
 
 .contacts__map {
   height: 200px;
-  background: url(../img/bg-map-mobile@1x.png) no-repeat center;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat center;
 
   @media (min-width: $tablets) {
     height: 372px;
-  }
-
-  @media (min-width: $tablets) {
-    height: 502px;
   }
 }

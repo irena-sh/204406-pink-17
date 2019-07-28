@@ -48,28 +48,6 @@
     }
   }
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  &--fullname {
-
-    @media (max-width: $phones-max) {
-      padding-top: 24px;
-    }
-
-    @media (min-width: $tablets) {
-      order: -3;
-      padding: 0;
-      border: 0;
-    }
-
-    @media (min-width: $desktops) {
-      margin-top: 5px;
-      width: 435px;
-    }
-  }
-
   &--apps {
     background-color: $grey-light;
 
@@ -88,7 +66,7 @@
 
     @media (min-width: $tablets) {
       order: -1;
-      padding-top: 0;
+      padding-top: 2px;
     }
 
     @media (min-width: $desktops) {
@@ -126,7 +104,7 @@
 
 .form__title {
   display: block;
-  padding: 0 32px;
+  padding: 0 30px;
   margin: 4px 0 16px;
   width: 100%;
   text-align: center;
@@ -143,10 +121,8 @@
   }
 
   &--contacts {
-    display: none;
-
-    @media (min-width: $tablets) {
-      display: block;
+    @media (max-width: $phones-max) {
+      display: none;
     }
   }
 
@@ -169,7 +145,7 @@
 .form__text-fields {
   &--contacts {
     @media (min-width: $tablets) {
-      padding: 28px 58px 0px;
+      padding: 32px 58px 0;
     }
 
     @media (min-width: $desktops) {
@@ -200,8 +176,15 @@
   }
 
   &--contacts {
+    @media (min-width: $tablets) {
+      position: relative;
+      margin: 0;
+      padding-bottom: 28px;
+    }
+
     @media (min-width: $desktops) {
       width: 375px;
+      padding-bottom: 13px;
     }
   }
 
@@ -501,7 +484,7 @@
 .form__button {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
+  padding-top: 48px;
 
   @media (max-width: $phones-max) {
     @include container-phones(20px);
@@ -511,7 +494,7 @@
   @media (min-width: $tablets) {
     flex-direction: row;
     align-items: center;
-    margin-top: 67px;
+    padding-top: 69px;
   }
 
   @media (min-width: $desktops) {

@@ -9,6 +9,7 @@
   background-color: $grey-light;
   padding-top: 91px;
   padding-bottom: 42px;
+
   @include angled-bg;
 
   @media (min-width: $tablets) {
@@ -37,7 +38,7 @@
   line-height: 30px;
   transform: translateX(-50%);
   border-collapse: collapse;
-  width: 262.5%;
+  width: 175%;
 
   @media (min-width: $tablets) {
     width: 100%;
@@ -88,13 +89,13 @@
     left: -2px;
     width: 74px;
     height: 73px;
-    background: url(../img/bg-hit.svg) no-repeat top left;
+    background: url("../img/bg-hit.svg") no-repeat top left;
     background-size: 74px 73px;
 
     @media (min-width: $tablets) and (max-width: $tablets-max) {
       width: 61px;
       height: 61px;
-      background: url(../img/bg-hit-tablet.svg) no-repeat top left;
+      background: url("../img/bg-hit-tablet.svg") no-repeat top left;
       background-size: 61px;
     }
 
@@ -106,7 +107,6 @@
 
 .prices__marker {
   position: absolute;
-  top: 0;
   left: 0;
   width: 78px;
   height: 73px;

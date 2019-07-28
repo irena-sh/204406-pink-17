@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $desktops) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -148,7 +148,7 @@
     width: 300px;
     padding: 357px 30px 67px;
     margin-right: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 18px;
     line-height: 30px;
     top: -12px;
@@ -164,7 +164,7 @@
       width: 186px;
       height: 302px;
       left: 50%;
-      top: 0px;
+      top: 0;
       transform: translateX(-50%);
       background-color: $pink;
       z-index: 2;
@@ -206,7 +206,7 @@
 
   @media (min-width: $desktops) {
     background-color: $grey-light;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 68px;
     min-height: 412px;
   }

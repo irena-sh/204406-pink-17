@@ -35,7 +35,7 @@
   @media (min-width: $desktops) {
     margin-left: 80px;
 
-    &:first-child{
+    &:first-child {
       margin-left: 0;
     }
 
@@ -69,7 +69,7 @@
   box-shadow: 0 -1px 0 $black,
     inset 0 1px 0 rgba($white, 0.15);
 
-    @media (min-width: $desktops) {
+  @media (min-width: $desktops) {
     background-color: transparent;
     border: none;
     box-shadow: none;
@@ -91,8 +91,8 @@
 
 .main-nav__link:last-child {
   box-shadow: 0 -1px 0 $black,
-              inset 0 1px 0 rgba($white, 0.15),
-              inset 0 -1px 0 $black;
+    inset 0 1px 0 rgba($white, 0.15),
+    inset 0 -1px 0 $black;
 
   @media (min-width: $desktops) {
     box-shadow: none;
