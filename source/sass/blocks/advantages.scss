@@ -44,16 +44,24 @@
 .advantages__description {
   display: block;
   margin-top: 27px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
 
   @media (min-width: $tablets) {
     margin-top: 0;
     max-width: 355px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   @media (min-width: $desktops) {
     max-width: 500px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
@@ -201,7 +209,7 @@
   }
 
   @media (min-width: $tablets) {
-    padding-top: 60px;
+    padding-top: 56px;
   }
 
   @media (min-width: $desktops) {
