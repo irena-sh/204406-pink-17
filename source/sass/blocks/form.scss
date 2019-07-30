@@ -72,6 +72,7 @@
 
     @media (min-width: $desktops) {
       width: 100%;
+      padding-top: 0;
     }
   }
 
@@ -83,6 +84,7 @@
     }
 
     @media (min-width: $desktops) {
+      padding: 0;
       width: 100%;
     }
   }
@@ -269,6 +271,7 @@
   }
 }
 
+
 .form__field-checkbox {
   position: relative;
 
@@ -354,7 +357,7 @@
 
   &--apps {
     @media (min-width: $desktops) {
-      padding: 37px 74px 44px;
+      padding: 33px 74px 44px;
     }
   }
 }
@@ -496,10 +499,12 @@
     flex-direction: row;
     align-items: center;
     padding-top: 69px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktops) {
-    margin-top: 65px;
+    padding-top: 60px;
+    margin-bottom: 20px;
   }
 }
 

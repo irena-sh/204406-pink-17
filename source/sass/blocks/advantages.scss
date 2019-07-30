@@ -142,9 +142,11 @@
 
 .advantages__item {
   margin-bottom: 29px;
+  text-align: center;
 
   @media (min-width: $tablets) {
     margin-bottom: 33px;
+    text-align: left;
   }
 
   &:last-child {
@@ -182,6 +184,10 @@
 
 .advantages__text {
   margin: 0;
+
+  @media (min-width: $desktops) {
+    text-align: center;
+  }
 }
 
 .advantages__title {
@@ -200,6 +206,7 @@
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 24px;
+    text-align: center;
   }
 }
 

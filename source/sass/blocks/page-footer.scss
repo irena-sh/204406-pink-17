@@ -14,12 +14,12 @@
   @media (min-width: $tablets) {
     display: flex;
     justify-content: space-between;
-    padding-top: 36px;
+    padding-top: 23px;
     padding-bottom: 34px;
   }
 
   @media (min-width: $desktops) {
-    padding-top: 70px;
+    padding-top: 52px;
     padding-bottom: 68px;
   }
 }
@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $desktops) {
-    margin-left: 12px;
+    margin-left: 9px;
     margin-right: 0;
   }
 }

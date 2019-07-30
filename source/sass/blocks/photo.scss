@@ -71,7 +71,7 @@
 
   @media (min-width: $desktops) {
     min-height: 555px;
-    margin-bottom: 54px;
+    margin-bottom: 36px;
 
     &:nth-child(2n) {
       margin-right: 20px;
@@ -144,7 +144,7 @@
   font-weight: 300;
 }
 
-.photo__like {
+.photo__button {
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -156,7 +156,9 @@
 
   &--panorama {
     @media (min-width: $tablets) {
+      position: absolute;
       margin-top: 0;
+      margin-left: 760px;
       order: -1;
     }
   }
@@ -174,6 +176,12 @@
     margin-left: 0;
     order: -1;
     margin-right: auto;
+  }
+
+  &--panorama {
+    @media (min-width: $tablets) {
+      margin-right: 17px;
+    }
   }
 
   &:hover {

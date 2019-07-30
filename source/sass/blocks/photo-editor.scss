@@ -1,9 +1,14 @@
 .photo-editor {
   background-color: $grey-light;
 
+  @media (min-width: $tablets) {
+    background-color: transparent;
+    margin-bottom: 12px;
+  }
+
   @media (min-width: $desktops) {
     background-color: transparent;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
   }
 }
 
@@ -65,14 +70,14 @@
   @media (min-width: $tablets) {
     padding-top: 40px;
     padding-bottom: 54px;
-    margin-left: 45px;
+    margin-left: 27px;
     width: 275px;
     flex-grow: 1;
   }
 
   @media (min-width: $desktops) {
     padding-bottom: 57px;
-    margin-left: 90px;
+    margin-left: 75px;
   }
 }
 
@@ -236,6 +241,7 @@
 
   @media (min-width: $tablets) {
     margin-top: auto;
+    padding-left: 16px;
   }
 }
 
@@ -247,7 +253,7 @@
   @media (min-width: $tablets) {
     display: flex;
     flex-direction: column;
-    padding-left: 2px;
+    padding-left: 0;
     padding-right: 13px;
   }
 
