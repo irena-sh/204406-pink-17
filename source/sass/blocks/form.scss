@@ -1,10 +1,13 @@
 .form {
+  padding-bottom: 15px;
+
   @media (min-width: $tablets) {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    padding-top: 2px;
   }
 
   @media (min-width: $desktops) {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -41,8 +44,8 @@
     }
 
     @media (min-width: $desktops) {
-      margin-top: 6px;
-      width: 436px;
+      margin-top: 4px;
+      width: 435px;
     }
   }
 
@@ -55,17 +58,21 @@
     }
 
     @media (min-width: $desktops) {
-      width: 436px;
+      width: 435px;
     }
   }
 
   &--contacts {
+    padding-top: 30px;
+
     @media (min-width: $tablets) {
       order: -1;
+      padding-top: 7px;
     }
 
     @media (min-width: $desktops) {
       width: 100%;
+      padding-top: 0;
     }
   }
 
@@ -77,11 +84,13 @@
     }
 
     @media (min-width: $desktops) {
+      padding: 0;
       width: 100%;
     }
   }
 
   &--emotions {
+    padding-bottom: 0;
     margin-bottom: 0;
 
     @media (min-width: $desktops) {
@@ -115,32 +124,39 @@
   }
 
   &--contacts {
-    display: none;
-
-    @media (min-width: $tablets) {
-      display: block;
+    @media (max-width: $phones-max) {
+      display: none;
     }
   }
 
-  &::before {
-    content: "";
-    display: block;
-    left: 20px;
-    right: 20px;
-    height: 2px;
+  &--apps {
+    @media (min-width: $tablets) {
+      padding: 0 24px;
+    }
+  }
+
+  &--emotions {
+    margin-bottom: 15px;
+
+    @media (min-width: $tablets) {
+      padding: 0 38px;
+      margin-bottom: 0;
+    }
   }
 }
 
 .form__text-fields {
   &--contacts {
     @media (min-width: $tablets) {
-      padding: 26px 58px 32px;
+      padding: 30px 58px 0;
     }
 
     @media (min-width: $desktops) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 26px;
     }
   }
 }
@@ -148,20 +164,30 @@
 .form__field-text {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   &--fullname {
     @media (min-width: $tablets) {
       flex-direction: row;
       align-items: center;
+      margin-bottom: 52px;
+    }
+
+    @media (min-width: $desktops) {
       margin-bottom: 54px;
     }
   }
 
   &--contacts {
+    @media (min-width: $tablets) {
+      position: relative;
+      margin: 0;
+      padding-bottom: 28px;
+    }
+
     @media (min-width: $desktops) {
-      width: 365px;
-      margin-bottom: 0;
+      width: 375px;
+      padding-bottom: 13px;
     }
   }
 
@@ -193,7 +219,7 @@
 }
 
 .form__text-label + .form__text-input {
-  margin-top: 5px;
+  margin-top: 6px;
 
   @media (min-width: $tablets) {
     margin-top: 0;
@@ -230,7 +256,11 @@
   padding-top: 23px;
 
   @media (min-width: $tablets) {
-    padding: 33px 58px 48px;
+    padding: 34px 58px 48px;
+  }
+
+  @media (min-width: $desktops) {
+    padding: 34px 58px 56px;
   }
 
   &--achievements {
@@ -240,6 +270,7 @@
     }
   }
 }
+
 
 .form__field-checkbox {
   position: relative;
@@ -321,13 +352,12 @@
   padding-top: 20px;
 
   @media (min-width: $tablets) {
-    padding: 33px 58px 48px;
+    padding: 35px 58px 48px;
   }
 
   &--apps {
     @media (min-width: $desktops) {
-      padding-left: 74px;
-      padding-right: 74px;
+      padding: 33px 74px 44px;
     }
   }
 }
@@ -410,7 +440,7 @@
   }
 
   @media (min-width: $desktops) {
-    padding-top: 23px;
+    padding-top: 25px;
     padding-bottom: 43px;
   }
 }
@@ -458,7 +488,7 @@
 .form__button {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
+  padding-top: 48px;
 
   @media (max-width: $phones-max) {
     @include container-phones(20px);
@@ -468,11 +498,13 @@
   @media (min-width: $tablets) {
     flex-direction: row;
     align-items: center;
-    margin-top: 67px;
+    padding-top: 69px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktops) {
-    margin-top: 65px;
+    padding-top: 60px;
+    margin-bottom: 20px;
   }
 }
 
@@ -487,18 +519,24 @@
 }
 
 .form__note {
+  margin-top: 35px;
   line-height: 30px;
   text-transform: uppercase;
 
-  @media (max-width: $phones-max) {
-    margin-top: 43px;
-  }
-
   @media (min-width: $tablets) {
+    margin-top: 0;
     margin-left: auto;
   }
 }
 
 .form__note-symbol {
   color: $pink;
+}
+
+.form__note-required {
+  display: none;
+
+  @media (min-width: $desktops) {
+    display: inline;
+  }
 }

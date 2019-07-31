@@ -14,13 +14,13 @@
   @media (min-width: $tablets) {
     display: flex;
     justify-content: space-between;
-    padding-top: 36px;
-    padding-bottom: 37px;
+    padding-top: 23px;
+    padding-bottom: 34px;
   }
 
   @media (min-width: $desktops) {
-    padding-top: 70px;
-    padding-bottom: 72px;
+    padding-top: 52px;
+    padding-bottom: 68px;
   }
 }
 
@@ -30,10 +30,16 @@
 }
 
 .page-footer__social {
-  margin-top: 40px;
+  margin-top: 33px;
 
   @media (min-width: $tablets) {
-    margin-top: 0;
+    margin-top: 3px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: $desktops) {
+    margin-left: 9px;
+    margin-right: 0;
   }
 }
 
@@ -41,6 +47,10 @@
   margin-top: 40px;
 
   @media (min-width: $tablets) {
-    margin-top: 0;
+    margin-top: 14px;
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 14px;
   }
 }

@@ -25,34 +25,33 @@
   }
 }
 
-@mixin angled-bg($height: 25px, $bgcolor: $grey-light) {
-  overflow-x: hidden;
-
+@mixin angled-bg($height: 25px, $top: 0) {
   &::before {
     content: "";
-    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: $top;
     width: 100%;
-    height: $height;
-    background-color: inherit;
-    border-top: $height solid $white;
-    border-right: 100vw solid $bgcolor;
-    border-left: none;
+    height: 100%;
+    background: $grey-light url("../img/bg-triangle-white.svg") no-repeat center top;
+    background-size: 100% $height;
+    z-index: 0;
   }
 }
 
 @mixin container() {
-  width: 280px;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 
   @media (min-width: $tablets) {
-    width: 620px;
+    width: 660px;
   }
 
   @media (min-width: $desktops) {
-    width: 940px;
+    width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 

@@ -8,38 +8,15 @@
   @media (min-width: $tablets) {
     min-height: 110px;
   }
-}
 
-.page-header__logo {
-  height: 22px;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 22px;
-  margin-bottom: 22px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-@media (max-width: $tablets-max) {
-  .page-header--full {
+  &--full {
     position: relative;
     background-color: $blue-dark;
-  }
-}
 
-@media (min-width: $tablets) {
-  .page-header {
-    min-height: 110px;
-  }
-
-  .page-header__logo {
-    height: 40px;
-    margin-top: 27px;
-    margin-bottom: 43px;
-  }
-
-  .page-header__img {
-    padding-top: 17px;
+    @media (min-width: $desktops) {
+      position: absolute;
+      background-color: rgba($black, 0.3);
+    }
   }
 }
 
@@ -51,5 +28,36 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
+  }
+}
+
+.page-header__logo {
+  height: 22px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (max-width: $phones-max) {
+    margin-left: 105px;
+  }
+
+  @media (min-width: $tablets) {
+    margin-top: 27px;
+    margin-bottom: 43px;
+    width: 147px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktops) {
+    margin-left: 0;
+  }
+}
+
+.page-header__img {
+  @media (min-width: $tablets) {
+    padding-top: 17px;
   }
 }
