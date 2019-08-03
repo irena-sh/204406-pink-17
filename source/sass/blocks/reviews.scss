@@ -21,7 +21,7 @@
       height: 63.789px;
       transform: translateX(-50%);
       margin-left: 2px;
-      background: url(../img/icon-quotes.svg) no-repeat top left;
+      background: url("../img/icon-quotes.svg") no-repeat top left;
       background-size: 78.672px 63.789px;
     }
   }
@@ -102,7 +102,7 @@
   }
 
   @media (min-width: $tablets) {
-    margin-top: 22px;
+    margin-top: 0;
     margin-bottom: 36px;
     font-size: 18px;
     line-height: 30px;
@@ -139,12 +139,12 @@
 
   &--previous {
     left: 0;
-    background: url(../img/icon-review-arrow-left.svg) no-repeat top left;
+    background: url("../img/icon-review-arrow-left.svg") no-repeat 0% 100%;
   }
 
   &--next {
     right: 0;
-    background: url(../img/icon-review-arrow-right.svg) no-repeat top left;
+    background: url("../img/icon-review-arrow-right.svg") no-repeat 0% 100%;
   }
 }
 

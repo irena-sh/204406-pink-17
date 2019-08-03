@@ -7,7 +7,7 @@
   padding-top: 66px;
 
   @media (min-resolution: $retina-dpi),
-        (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px auto;
   }
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $tablets) and (min-resolution: $retina-dpi),
-        (min-width: $tablets) and (min-resolution: $retina-dppx) {
+    (min-width: $tablets) and (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-tablet@2x.jpg");
     background-size: 1200px auto;
   }
@@ -28,7 +28,7 @@
   }
 
   @media (min-width: $desktops) and (min-resolution: $retina-dpi),
-        (min-width: $desktops) and (min-resolution: $retina-dppx) {
+    (min-width: $desktops) and (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-desktop@2x.jpg");
     background-size: 2560px auto;
   }
@@ -85,8 +85,8 @@
     }
 
     @media (min-resolution: $retina-dpi),
-          (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-mobile@2x.jpg");
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
       background-size: 258px auto;
     }
 
@@ -102,8 +102,8 @@
     }
 
     @media (min-width: $tablets) and (min-resolution: $retina-dpi),
-          (min-width: $tablets) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-tablet@2x.jpg");
+      (min-width: $tablets) and (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
       background-size: 700px auto;
     }
 
@@ -116,8 +116,8 @@
     }
 
     @media (min-width: $desktops) and (min-resolution: $retina-dpi),
-          (min-width: $desktops) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-desktop@2x.jpg");
+      (min-width: $desktops) and (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
       background-size: 1050px auto;
     }
   }

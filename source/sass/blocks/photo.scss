@@ -3,7 +3,7 @@
     margin-bottom: 20px;
 
     @media (min-width: $tablets) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     @media (min-width: $desktops) {
@@ -14,14 +14,14 @@
   &--card {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     width: 280px;
-    min-height: 301px;
 
     @media (min-width: $tablets) {
       width: 300px;
       min-height: 455px;
       margin-right: 20px;
+      margin-bottom: 20px;
     }
 
     @media (min-width: $tablets) {
@@ -103,39 +103,6 @@
   }
 }
 
-.photo--card {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  width: 280px;
-  min-height: 301px;
-
-  @media (min-width: $tablets) {
-    width: 300px;
-    min-height: 455px;
-    margin-right: 20px;
-  }
-
-  @media (min-width: $tablets) {
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-  }
-
-  @media (min-width: $desktops) {
-    min-height: 555px;
-    margin-bottom: 36px;
-
-    &:nth-child(2n) {
-      margin-right: 20px;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-  }
-}
-
 .photo__image {
   display: block;
 
@@ -177,6 +144,10 @@
     padding-right: 32px;
     padding-bottom: 22px;
     padding-left: 28px;
+  }
+
+  @media (min-width: $tablets) {
+    padding-right: 31px;
   }
 
   &--panorama {
