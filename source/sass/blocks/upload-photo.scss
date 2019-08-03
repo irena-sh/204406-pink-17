@@ -1,12 +1,12 @@
 .upload-photo {
-  padding-top: 41px;
+  padding-top: 21px;
 
   @media (min-width: $tablets) {
-    padding-top: 65px;
+    padding-top: 47px;
   }
 
   @media (min-width: $desktops) {
-    padding-top: 22px;
+    padding-top: 8px;
     padding-bottom: 32px;
   }
 }
@@ -19,7 +19,7 @@
   margin-bottom: 42px;
 
   @media (min-width: $tablets) {
-    padding-left: 60px;
+    padding-left: 58px;
     padding-right: 60px;
     margin-bottom: 69px;
     font-size: 18px;

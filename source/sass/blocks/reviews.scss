@@ -15,12 +15,14 @@
     &::before {
       content: "";
       position: absolute;
-      top: 72px;
+      top: 71px;
       left: 50%;
-      width: 79px;
-      height: 63px;
+      width: 78.672px;
+      height: 63.789px;
       transform: translateX(-50%);
-      background-color: $pink;
+      margin-left: 2px;
+      background: url("../img/icon-quotes.svg") no-repeat top left;
+      background-size: 78.672px 63.789px;
     }
   }
 }
@@ -100,7 +102,7 @@
   }
 
   @media (min-width: $tablets) {
-    margin-top: 22px;
+    margin-top: 0;
     margin-bottom: 36px;
     font-size: 18px;
     line-height: 30px;
@@ -116,19 +118,33 @@
     top: 28px;
     width: 22px;
     border: none;
+    padding: 0;
     height: 41px;
+    background-size: 22px 41px;
     text-indent: -1000px;
     overflow: hidden;
     background-color: $pink;
     cursor: pointer;
+    opacity: 0.3;
+    outline: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 
   &--previous {
     left: 0;
+    background: url("../img/icon-review-arrow-left.svg") no-repeat 0% 100%;
   }
 
   &--next {
     right: 0;
+    background: url("../img/icon-review-arrow-right.svg") no-repeat 0% 100%;
   }
 }
 

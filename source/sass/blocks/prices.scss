@@ -9,6 +9,7 @@
   background-color: $grey-light;
   padding-top: 91px;
   padding-bottom: 42px;
+  overflow: hidden;
 
   @include angled-bg;
 
@@ -19,7 +20,7 @@
   }
 
   @media (min-width: $desktops) {
-    @include angled-bg($height: 90px);
+    @include angled-bg($height: 65px);
     padding-top: 140px;
     padding-bottom: 95px;
   }
@@ -34,11 +35,9 @@
 .prices__table {
   position: relative;
   left: 50%;
-  font-weight: 300;
-  line-height: 30px;
   transform: translateX(-50%);
   border-collapse: collapse;
-  width: 162%;
+  width: 262.5%;
 
   @media (min-width: $tablets) {
     width: 100%;
@@ -115,13 +114,13 @@
   font-weight: 400;
 
   @media (min-width: $tablets) {
-    top: 2px;
+    top: 0;
     width: 61px;
     height: 61px;
   }
 
   @media (min-width: $desktops) {
-    top: 6px;
+    top: 5px;
     left: 2px;
     width: 78px;
     height: 73px;
@@ -131,20 +130,21 @@
 .prices__description {
   position: relative;
   border-top: 0;
-  padding-top: 16px;
+  padding-top: 17px;
   padding-right: 68px;
-  padding-bottom: 13px;
+  padding-bottom: 18px;
   padding-left: 22px;
   background-color: $white;
   border: 2px solid $grey;
   border-top-width: 0;
+  background-clip: padding-box;
 
   @media (min-width: $tablets) {
     padding: 7px 16px 8px;
   }
 
   @media (min-width: $desktops) {
-    padding: 13px 22px 14px;
+    padding: 16px 22px 13px;
   }
 
   &--feature-title {

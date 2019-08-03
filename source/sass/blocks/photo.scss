@@ -1,10 +1,68 @@
+.photo {
+  &--panorama {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablets) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktops) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &--card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+    width: 280px;
+
+    @media (min-width: $tablets) {
+      width: 300px;
+      min-height: 455px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablets) {
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width: $desktops) {
+      min-height: 555px;
+      margin-bottom: 54px;
+
+      &:nth-child(2n) {
+        margin-right: 20px;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 .photo__panorama {
   display: block;
   position: relative;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
 
   @media (max-width: $phones-max) {
     @include container-phones;
+  }
+
+  @media (min-width: $tablets) {
+    height: 509px;
+  }
+
+  @media (min-width: $desktops) {
+    height: 506px;
   }
 }
 
@@ -13,15 +71,10 @@
 
   @media (min-width: $tablets) {
     position: relative;
-    height: 509px;
     width: auto;
     max-width: inherit;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  @media (min-width: $desktops) {
-    height: 506px;
   }
 }
 
@@ -47,39 +100,6 @@
   @media (min-width: $desktops) {
     transform: translateX(330px);
     top: 54px;
-  }
-}
-
-.photo--card {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  width: 280px;
-  min-height: 301px;
-
-  @media (min-width: $tablets) {
-    width: 300px;
-    min-height: 455px;
-    margin-right: 20px;
-  }
-
-  @media (min-width: $tablets) {
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-  }
-
-  @media (min-width: $desktops) {
-    min-height: 555px;
-    margin-bottom: 36px;
-
-    &:nth-child(2n) {
-      margin-right: 20px;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
   }
 }
 
@@ -124,6 +144,18 @@
     padding-right: 32px;
     padding-bottom: 22px;
     padding-left: 28px;
+  }
+
+  @media (min-width: $tablets) {
+    padding-right: 31px;
+  }
+
+  &--panorama {
+    position: relative;
+
+    @media (min-width: $tablets) {
+      padding-bottom: 24px;
+    }
   }
 }
 

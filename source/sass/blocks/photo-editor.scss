@@ -3,7 +3,7 @@
 
   @media (min-width: $tablets) {
     background-color: transparent;
-    margin-bottom: 12px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktops) {
@@ -70,18 +70,18 @@
   @media (min-width: $tablets) {
     padding-top: 40px;
     padding-bottom: 54px;
-    margin-left: 27px;
+    margin-left: 45px;
     width: 275px;
     flex-grow: 1;
   }
 
   @media (min-width: $desktops) {
     padding-bottom: 57px;
-    margin-left: 75px;
+    margin-left: 90px;
   }
 }
 
-.photo-editor__tools-wrapper {
+.photo-editor__options-wrapper {
   padding-top: 40px;
 
   @media (max-width: $phones-max) {
@@ -103,7 +103,7 @@
   }
 }
 
-.photo-editor__options-item {
+.photo-editor__option {
   @media (max-width: $phones-max) {
     display: inline-block;
     vertical-align: top;
@@ -122,7 +122,7 @@
     padding-bottom: 13px;
   }
 
-  &--contrast {
+  &--compact {
     @media (min-width: $tablets) {
       padding-top: 22px;
       padding-bottom: 24px;
@@ -135,35 +135,98 @@
   }
 }
 
-.photo-editor__tab {
-  margin-left: 16px;
+.photo-editor__option-name {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
   margin-right: 16px;
-
-  @media (max-width: $phones-max) {
-    display: inline-block;
-    vertical-align: top;
-  }
+  margin-left: 16px;
+  width: 48px;
+  height: 48px;
 
   @media (min-width: $tablets) {
-    padding-left: 3px;
-    padding-right: 1px;
+    margin-right: 1px;
+    margin-left: 3px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
   }
 
   @media (min-width: $desktops) {
-    padding: 0;
+    margin: 0;
+    width: 48px;
+    height: 48px;
   }
 }
 
-.photo-editor__tool-name {
-  display: inline-block;
-  vertical-align: top;
-  width: 48px;
-  height: 48px;
-  background-color: $pink;
+.photo-editor__option-icon {
+  fill: rgba($blue-dark, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  @media (min-width: $tablets) and (max-width: $tablets-max) {
-    width: 24px;
-    height: 24px;
+  &:hover {
+    fill: rgba($blue-dark, 0.5);
+    cursor: pointer;
+  }
+
+  &--active {
+    fill: $pink;
+  }
+
+  @media (min-width: $tablets) {
+    fill: $pink;
+  }
+
+  &--crop {
+    width: 48px;
+    height: 48px;
+
+    @media (min-width: $tablets) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (min-width: $desktops) {
+      width: 48px;
+      height: 48px;
+      margin-left: -2px;
+      margin-top: 1px;
+    }
+  }
+
+  &--fill {
+    width: 48px;
+    height: 48px;
+
+    @media (min-width: $tablets) {
+      margin-top: 2px;
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (min-width: $desktops) {
+      margin-top: 3px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+
+    @media (min-width: $tablets) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (min-width: $desktops) {
+      width: 32px;
+      height: 32px;
+      margin-left: -2px;
+    }
   }
 }
 
@@ -173,8 +236,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding-top: 29px;
-    padding-bottom: 29px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: $grey-light;
   }
 
   @media (min-width: $tablets) {
@@ -185,21 +249,27 @@
   }
 
   @media (min-width: $desktops) {
+    padding-top: 14px;
     padding-right: 30px;
+    padding-bottom: 10px;
     padding-left: 44px;
+
+    &--compact {
+      padding-top: 13px;
+    }
   }
 }
 
 .photo-editor__range {
   position: relative;
   height: 14px;
-  padding-top: 6px;
+  padding-top: 5px;
   padding-bottom: 6px;
 }
 
 .photo-editor__range-scale {
   height: 2px;
-  background-color: $blue-dark;
+  background-color: #283645;
 }
 
 .photo-editor__range-value {
@@ -216,10 +286,16 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  border: 2px solid $pink;
+  border: 2px solid #d22856;
   border-radius: 50%;
-  background-color: $white;
+  background-color: #ffffff;
   cursor: pointer;
+  outline: none;
+
+  &:active,
+  &:focus {
+    background-color: $pink;
+  }
 }
 
 .photo-editor__btns {
@@ -241,7 +317,6 @@
 
   @media (min-width: $tablets) {
     margin-top: auto;
-    padding-left: 16px;
   }
 }
 
@@ -253,7 +328,7 @@
   @media (min-width: $tablets) {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
+    padding-left: 2px;
     padding-right: 13px;
   }
 
