@@ -88,7 +88,7 @@
 }
 
 .reviews__text {
-  margin-top: 14px;
+  margin-top: 16px;
   margin-bottom: 0;
 
   @media (max-width: $tablets-max) {
@@ -102,10 +102,14 @@
   }
 
   @media (min-width: $tablets) {
-    margin-top: 0;
+    margin-top: 2px;
     margin-bottom: 36px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 22px;
   }
 }
 
@@ -115,7 +119,7 @@
   @media (min-width: $desktops) {
     display: block;
     position: absolute;
-    top: 28px;
+    top: 48px;
     width: 22px;
     border: none;
     padding: 0;

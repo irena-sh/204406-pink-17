@@ -21,7 +21,7 @@
 
   @media (min-width: $desktops) {
     @include angled-bg($height: 65px);
-    padding-top: 140px;
+    padding-top: 142px;
     padding-bottom: 95px;
   }
 }
@@ -37,7 +37,7 @@
   left: 50%;
   transform: translateX(-50%);
   border-collapse: collapse;
-  width: 262.5%;
+  width: 172.5%;
 
   @media (min-width: $tablets) {
     width: 100%;

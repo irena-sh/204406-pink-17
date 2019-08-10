@@ -108,7 +108,6 @@
 }
 
 .form__title {
-  display: block;
   padding: 0 30px;
   margin: 4px 0 16px;
   width: 100%;
@@ -555,7 +554,7 @@
   }
 
   @media (min-width: $desktops) {
-    padding-top: 60px;
+    padding-top: 62px;
     margin-bottom: 20px;
   }
 }

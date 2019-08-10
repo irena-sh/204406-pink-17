@@ -2,11 +2,10 @@
   padding-top: 21px;
 
   @media (min-width: $tablets) {
-    padding-top: 47px;
+    padding-top: 42px;
   }
 
   @media (min-width: $desktops) {
-    padding-top: 8px;
     padding-bottom: 32px;
   }
 }
