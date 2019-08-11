@@ -86,7 +86,6 @@
     }
 
     @media (min-width: $desktops) {
-      padding: 0;
       width: 100%;
     }
   }
@@ -113,15 +112,26 @@
   width: 100%;
   text-align: center;
   color: $pink;
+  font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
 
+  @media (max-width: $phones-max) {
+    @include container-phones(40px);
+  }
+
   @media (min-width: $tablets) {
+    position: relative;
+    top: -10px;
+    left: 50%;
+    display: inline-block;
+    vertical-align: top;
     padding: 0 32px;
-    margin: -1px auto 0;
+    margin: 0;
     width: auto;
     background-color: $white;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
   }
 
   &--contacts {
