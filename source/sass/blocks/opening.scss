@@ -9,7 +9,7 @@
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 700px auto;
+    background-size: 320px auto;
   }
 
   @media (min-width: $tablets) {
@@ -41,6 +41,10 @@
     @media (max-width: $tablets-max) {
       padding-top: 0;
       background-position: center -69px;
+    }
+
+    @media (width: $tablets) {
+      background-position: center -112px;
     }
   }
 }
