@@ -71,7 +71,7 @@
 
   @media (min-width: $tablets) {
     position: relative;
-    width: 100%;
+    width: auto;
     max-width: inherit;
     left: 50%;
     transform: translateX(-50%);
