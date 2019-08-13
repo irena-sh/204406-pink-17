@@ -37,7 +37,7 @@
   left: 50%;
   transform: translateX(-50%);
   border-collapse: collapse;
-  width: 172.5%;
+  width: 262.5%;
 
   @media (min-width: $tablets) {
     width: 100%;
@@ -110,7 +110,7 @@
   width: 78px;
   height: 73px;
   transform: rotate(-45deg);
-  top: 4px;
+  top: 6px;
   font-weight: 400;
 
   @media (min-width: $tablets) {

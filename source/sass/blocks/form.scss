@@ -1,7 +1,6 @@
 .form {
   padding-bottom: 15px;
-  padding-top: 2px;
-  overflow: hidden;
+  padding-top: 0;
 
   @media (min-width: $tablets) {
     padding-bottom: 35px;
@@ -58,7 +57,6 @@
     @media (min-width: $tablets) {
       background-color: transparent;
       order: -2;
-      padding-bottom: 13px;
     }
 
     @media (min-width: $desktops) {
@@ -71,8 +69,7 @@
 
     @media (min-width: $tablets) {
       order: -1;
-      padding-top: 0;
-      padding-bottom: 13px;
+      padding-top: 7px;
     }
 
     @media (min-width: $desktops) {
@@ -110,9 +107,9 @@
 }
 
 .form__title {
-  padding: 0 30px;
-  margin: 4px 0 16px;
   width: 100%;
+  padding-top: 4px;
+  padding-bottom: 16px;
   text-align: center;
   color: $pink;
   font-size: 14px;
@@ -170,7 +167,7 @@
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
-      padding-top: 16px;
+      padding-top: 26px;
     }
   }
 }
@@ -196,7 +193,7 @@
     @media (min-width: $tablets) {
       position: relative;
       margin: 0;
-      padding-bottom: 18px;
+      padding-bottom: 28px;
     }
 
     @media (min-width: $desktops) {
@@ -307,21 +304,21 @@
   padding-top: 23px;
 
   @media (min-width: $tablets) {
-    padding: 24px 58px 48px;
+    padding: 34px 58px 48px;
   }
 
   @media (min-width: $desktops) {
-    padding: 28px 58px 56px;
+    padding: 34px 58px 56px;
   }
 
   &--achievements {
     @media (min-width: $desktops) {
       display: flex;
       width: 100%;
-      padding-bottom: 12px;
     }
   }
 }
+
 
 .form__field-checkbox {
   position: relative;
@@ -448,7 +445,6 @@
 
   @media (min-width: $tablets) {
     padding-left: 59px;
-    padding-top: 0;
   }
 
   &::before {
@@ -500,11 +496,11 @@
 
 .form__textarea-fields {
   @media (min-width: $tablets) {
-    padding: 24px 58px 51px;
+    padding: 26px 58px 51px;
   }
 
   @media (min-width: $desktops) {
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 43px;
   }
 }
@@ -563,7 +559,7 @@
   @media (min-width: $tablets) {
     flex-direction: row;
     align-items: center;
-    padding-top: 67px;
+    padding-top: 69px;
     margin-bottom: 10px;
   }
 
