@@ -190,7 +190,7 @@
     position: absolute;
     z-index: 20;
     width: 100%;
-    height: 110px;
+    height: 45px;
     background: url("../img/bg-triangle-white-footer.svg") center top no-repeat;
     background-size: cover;
   }
@@ -198,7 +198,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     width: 36px;
     height: 35px;
