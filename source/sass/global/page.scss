@@ -22,15 +22,17 @@ figure {
   margin: 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-fieldset {
+fieldset,
+legend {
+  margin: 0;
   padding: 0;
 }
 
 blockquote {
   margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
