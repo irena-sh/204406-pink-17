@@ -50,11 +50,6 @@
   }
 }
 
-.prices__header + .prices__header {
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
-}
-
 .prices__header {
   position: relative;
   background-color: $blue-dark;
@@ -62,7 +57,6 @@
   text-transform: uppercase;
   padding: 20px;
   padding-top: 17px;
-  border-right: 2px solid white;
   background-clip: padding-box;
 
   @media (min-width: $tablets) {
@@ -74,6 +68,8 @@
   @media (min-width: $desktops) {
     padding: 20px;
     padding-top: 17px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
   }
 
   &:first-of-type {

@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <svg version="1.1" style="display: none">
-      <symbol viewBox="0 0 74.426 22.859" id="header-logo-mobile">
+      <symbol viewBox="0 0 74.426 22.859" id="header-logo-phone">
         <g>
           <path fill="currentColor" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"></path>
           <path fill="currentColor" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"></path>
@@ -169,7 +170,7 @@
               </fieldset>
               <fieldset class="form__fieldset  form__fieldset--achievements">
                 <div class="form__fieldset-in">
-                  <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
+                  <p class="form__title">Ваши безбашенные достижения в путешествии</p>
                   <div class="form__checkbox-fields  form__checkbox-fields--achievements">
                     <div class="form__checkbox-wrapper">
                       <div class="form__field-checkbox">
@@ -205,23 +206,27 @@
                 </div>
               </fieldset>
               <fieldset class="form__fieldset  form__fieldset--contacts">
-                <div class="form__fieldset-in">
-                  <h2 class="form__title  form__title--contacts">Контактная информация</h2>
-                  <div class="form__text-fields  form__text-fields--contacts">
-                    <div class="form__field-text  form__field-text--contacts">
-                      <label class="form__text-label  form__text-label--contacts  form__text-label--phone" for="phone">Номер телефона</label>
-                      <input class="form__text-input  form__text-input--contacts" id="phone" type="tel" name="Номер телефона" placeholder="Номер, пожалуйста *">
-                    </div>
-                    <div class="form__field-text  form__field-text--contacts">
-                      <label class="form__text-label  form__text-label--contacts  form__text-label--address" for="email">Aдрес почты</label>
-                      <input class="form__text-input  form__text-input--contacts" id="email" type="email" name="E-mail" placeholder="Введите почту *" required>
+                <p class="form__title  form__title--contacts">Контактная информация</p>
+                  <div class="form__fieldset-in">
+                    <div class="form__text-fields  form__text-fields--contacts">
+                      <div class="form__field-text  form__field-text--contacts">
+                        <label class="form__text-label  form__text-label--contacts" for="phone">Номер телефона</label>
+                        <div class="form__input-wrapper  form__input-wrapper--contacts  form__input-wrapper--phone">
+                          <input class="form__text-input  form__text-input--contacts" id="phone" type="tel" name="Номер телефона" placeholder="Номер, пожалуйста *">
+                        </div>
+                      </div>
+                      <div class="form__field-text  form__field-text--contacts">
+                        <label class="form__text-label  form__text-label--contacts" for="email">Aдрес почты</label>
+                        <div class="form__input-wrapper  form__input-wrapper--contacts  form__input-wrapper--address">
+                          <input class="form__text-input  form__text-input--contacts" id="email" type="email" name="E-mail" placeholder="Введите почту *" required>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
               </fieldset>
               <fieldset class="form__fieldset  form__fieldset--apps">
                 <div class="form__fieldset-in">
-                  <h2 class="form__title form__title--apps">С каким приложением путешествовали?</h2>
+                  <p class="form__title form__title--apps">С каким приложением путешествовали?</p>
                   <div class="form__radio-fields  form__radio-fields--apps">
                     <div class="form__field-radio">
                       <input class="form__radio-input" type="radio" id="ios" name="Приложение" value="Pink для iOS" checked>
@@ -240,7 +245,7 @@
               </fieldset>
               <fieldset class="form__fieldset  form__fieldset--emotions">
                 <div class="form__fieldset-in">
-                  <h2 class="form__title form__title--emotions">Опишите свои эмоции</h2>
+                  <p class="form__title form__title--emotions">Опишите свои эмоции</p>
                   <div class="form__textarea-fields  form__textarea-fields--emotions">
                     <textarea class="form__textarea  form__textarea--emotions" name="Сообщение" rows="8" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                   </div>
@@ -265,17 +270,17 @@
         </svg>
       </a>
       <div class="page-footer__social social">
-        <a class="social__media social-media--twitter" href="https://twitter.com/" target="_blank">
+        <a class="social__media social-media--twitter" href="https://twitter.com/" target="_blank" aria-label="Twitter">
           <svg class="social__icon  social__icon--twitter" width="17.5px" height="14.663px">
             <use xlink:href="#twitter-icon"></use>
           </svg>
         </a>
-        <a class="social__media social-media--facebook" href="https://facebook.com/">
+        <a class="social__media social-media--facebook" href="https://facebook.com/" aria-label="Facebook">
           <svg class="social__icon  social__icon--facebook" width="8.673px" height="18.944px">
               <use xlink:href="#facebook-icon"></use>
             </svg>
         </a>
-        <a class="social__media social-media--youtube" href="https://youtube.com/">
+        <a class="social__media social-media--youtube" href="https://youtube.com/" aria-label="Youtube">
           <svg class="social__icon social__icon--youtube" width="14.64px" height="13.96px">
             <use xlink:href="#youtube-icon"></use>
           </svg>
