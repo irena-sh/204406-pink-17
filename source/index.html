@@ -112,18 +112,14 @@
     </svg>
     <header class="page-header page-header--full">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo logo--header">
-          <svg class="logo__image logo__image--header logo__image--mobile" width="74.426px" height="22.859px">
-            <use xlink:href="#header-logo-mobile"></use>
-          </svg>
-          <svg class="logo__image logo__image--header logo__image--tablet" width="146.3px" height="40.375px">
-            <use xlink:href="#header-logo-tablet"></use>
-          </svg>
-          <svg class="logo__image logo__image--header logo__image--desktop" width="146.3px" height="40.375px">
-            <use xlink:href="#header-logo-desktop"></use>
+        <a class="page-header__logo" href="index.html">
+          <svg class="page-header__logo-img site-logo" width="147" height="40">
+            <use class="header-logo__mobile" xlink:href="#header-logo-phone"></use>
+            <use class="header-logo__tablet" xlink:href="#header-logo-tablet"></use>
+            <use class="header-logo__desktop" xlink:href="#header-logo-desktop"></use>
           </svg>
         </a>
-        <nav class="main-nav main-nav--closed  main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="main-nav__button"></span></button>
           <ul class="main-nav__menu">
             <li class="main-nav__item main-nav__item--active"><a class ="main-nav__link" href="index.html">Главная</a></li>
@@ -136,15 +132,15 @@
     </header>
     <main class="index-page">
       <header class="opening opening--short">
-        <div class="opening__in opening__in--index  opening__in--hero">
-          <h1 class="opening__title  hidden">Приложение Pink</h1>
+        <div class="opening__in opening__in--index opening__in--hero">
+          <h1 class="opening__title hidden">Приложение Pink</h1>
           <section class="download">
             <h2 class="download__title">Взгляните на жизнь иначе!</h2>
             <a class="download__downloads-btn btn btn--download" href="https://www.apple.com/itunes" title="Скачать приложение">Скачать приложение</a>
             <div class="download__sites">
-              <a class="download__site  download__site--apple" href="https://www.apple.com/itunes" title="Скачать для iPhone и iPad">iPhone</a>
-              <a class="download__site  download__site--android" href="https://play.google.com/store" title="Скачать для Android">Android</a>
-              <a class="download__site  download__site--windows" href="https://www.microsoft.com" title="Скачать для Windows Phone">Windows</a>
+              <a class="download__site download__site--apple" href="https://www.apple.com/itunes" title="Скачать для iPhone и iPad">iPhone</a>
+              <a class="download__site download__site--android" href="https://play.google.com/store" title="Скачать для Android">Android</a>
+              <a class="download__site download__site--windows" href="https://www.microsoft.com" title="Скачать для Windows Phone">Windows</a>
             </div>
             <div class="download__info">
               Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -220,15 +216,15 @@
             <button class="reviews__nav  reviews__nav--previous" type="button">Предыдущий</button>
             <button class="reviews__nav  reviews__nav--next" type="button">Следующий</button>
           </div>
-          <div class="reviews__flip  flip">
-            <span class="flip__item  flip__item‐‐active"></span>
-            <span class="flip__item"></span>
-            <span class="flip__item"></span>
+          <div class="reviews__flip flip">
+            <button class="flip__item flip__item‐‐active hidden" type="button"></button>
+            <button class="flip__item hidden" type="button"></button>
+            <button class="flip__item hidden" type="button"></button>
           </div>
         </div>
       </section>
       <section class="prices">
-        <h2 class="prices__title  hidden">Цены</h2>
+        <h2 class="prices__title hidden">Цены</h2>
         <div class="prices__wrapper">
           <div class="prices__in">
             <table class="prices__table">
@@ -303,9 +299,9 @@
               </tr>
             </table>
             <div class="prices__flip  flip">
-              <span class="flip__item"></span>
-              <span class="flip__item  flip__item‐‐active"></span>
-              <span class="flip__item"></span>
+              <button class="flip__item hidden" type="button"></button>
+              <button class="flip__item flip__item‐‐active hidden" type="button"></button>
+              <button class="flip__item hidden" type="button"></button>
             </div>
           </div>
         </div>
@@ -340,12 +336,10 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo logo" href="index.html">
-        <svg class="logo__image logo__image--gadget" width="146.3px" height="40.375px">
-          <use xlink:href="#footer-logo-gadget"></use>
-        </svg>
-        <svg class="logo__image logo__image--desktop logo__image--footer" width="146.3px" height="40.375px">
-          <use xlink:href="#footer-logo-desktop"></use>
+      <a class="page-footer__logo" href="index.html">
+        <svg class="footer-logo" width="147" height="40">
+          <use class="footer-logo__mobile" xlink:href="#footer-logo-gadget"></use>
+          <use class="footer-logo__desktop" xlink:href="#footer-logo-desktop"></use>
         </svg>
       </a>
       <div class="page-footer__social social">

@@ -112,15 +112,11 @@
     </svg>
     <header class="page-header page-header--full">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo logo--header" href="index.html">
-          <svg class="logo__image logo__image--header logo__image--mobile" width="74.426px" height="22.859px">
-            <use xlink:href="#header-logo-mobile"></use>
-          </svg>
-          <svg class="logo__image logo__image--header logo__image--tablet" width="146.3px" height="40.375px">
-            <use xlink:href="#header-logo-tablet"></use>
-          </svg>
-          <svg class="logo__image logo__image--header logo__image--desktop" width="146.3px" height="40.375px">
-            <use xlink:href="#header-logo-desktop"></use>
+        <a class="page-header__logo" href="index.html">
+          <svg class="page-header__logo-img site-logo" width="147" height="40">
+            <use class="header-logo__mobile" xlink:href="#header-logo-phone"></use>
+            <use class="header-logo__tablet" xlink:href="#header-logo-tablet"></use>
+            <use class="header-logo__desktop" xlink:href="#header-logo-desktop"></use>
           </svg>
         </a>
         <nav class="main-nav main-nav--closed  main-nav--nojs">
@@ -206,7 +202,7 @@
                 </div>
               </div>
             </article>
-            <article class="photo  photo--card">
+            <article class="photo photo--card">
               <a class="photo__image" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
@@ -234,7 +230,7 @@
                 </div>
               </div>
             </article>
-            <article class="photo  photo--card">
+            <article class="photo photo--card">
               <a class="photo__image" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
@@ -262,7 +258,7 @@
                 </div>
               </div>
             </article>
-            <article class="photo  photo--card">
+            <article class="photo photo--card">
               <a class="photo__image" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
@@ -290,7 +286,7 @@
                 </div>
               </div>
             </article>
-            <article class="photo  photo--card">
+            <article class="photo photo--card">
               <a class="photo__image" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
@@ -318,7 +314,7 @@
                 </div>
               </div>
             </article>
-            <article class="photo  photo--card">
+            <article class="photo photo--card">
               <a class="photo__image" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
@@ -359,7 +355,7 @@
       </div>
       <div class="photo-editor">
         <div class="photo-editor__in">
-          <form class="photo-editor__form" method="post" action="http://echo.htmlacademy.ru">
+          <div class="photo-editor__wrap">
             <figure class="photo-editor__image">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
@@ -370,84 +366,64 @@
                 <img class="photo-editor__pic" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное изображение">
               </picture>
             </figure>
-            <div class="photo-editor__fields">
-              <div class="photo-editor__options-wrapper">
-                <ul class="photo-editor__options">
-                  <li class="photo-editor__option">
-                    <div class="photo-editor__option-name">
-                      <svg class="photo-editor__option-icon  photo-editor__option-icon--crop  photo-editor__option-icon--active" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+            <form class="photo-form wrapper" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="photo-form__fieldset">
+                <div class="photo-form__inputs">
+                  <input class="photo-form__radio photo-form__radio--crop hidden" name="filter-switch" id="filter-crop" type="radio" checked="">
+                  <label class="photo-form__label photo-form__label--crop" for="filter-crop">
+                    Обрезка
+                    <svg class="photo-editor__option-icon  photo-editor__option-icon--crop  photo-editor__option-icon--active" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                         <path fill="none" d="M0,0h48v48H0V0z"/>
                         <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                       </svg>
-                      Обрезка
-                    </div>
-                    <div class="photo-editor__control">
-                      <div class="photo-editor__range">
-                          <div class="photo-editor__range-scale"><div class="photo-editor__range-value" style="width: 84%"></div></div>
-                          <div class="photo-editor__range-btn" tabindex="0"></div>
-                        </div>
-                      </div>
-                    </li>
-                  <li class="photo-editor__option">
-                    <div class="photo-editor__option-name">
-                      <svg class="photo-editor__option-icon  photo-editor__option-icon--fill" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  </label>
+                  <input class="photo-form__radio photo-form__radio--fill hidden" name="filter-switch" id="filter-fill" type="radio">
+                  <label class="photo-form__label photo-form__label--fill" for="filter-fill">
+                    Заливка
+                    <svg class="photo-editor__option-icon  photo-editor__option-icon--fill" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                         <path fill="none" d="M0,0h48v48H0V0z"/>
                         <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
                         <rect y="40" width="48" height="3"/>
                       </svg>
-                      Цветокоррекция
-                    </div>
-                    <div class="photo-editor__control">
-                      <div class="photo-editor__range">
-                          <div class="photo-editor__range-scale"><div class="photo-editor__range-value" style="width: 84%"></div></div>
-                          <div class="photo-editor__range-btn" tabindex="0"></div>
-                        </div>
-                    </div>
-                  </li>
-                  <li class="photo-editor__option">
-                    <div class="photo-editor__option-name">
-                      <svg class="photo-editor__option-icon  photo-editor__option-icon--contrast" version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  </label>
+                  <input class="photo-form__radio photo-form__radio--contrast hidden" name="filter-switch" id="filter-contrast" type="radio">
+                  <label class="photo-form__label photo-form__label--contrast" for="filter-contrast">
+                    Контраст
+                    <svg class="photo-editor__option-icon  photo-editor__option-icon--contrast" version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                         <path fill="d22856" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                         <path fill="d22856" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                       </svg>
-                    </div>
-                    <div class="photo-editor__control  photo-editor__control--compact">
-                        <div class="photo-editor__range">
-                          <div class="photo-editor__range-scale"><div class="photo-editor__range-value" style="width: 84%"></div></div>
-                          <div class="photo-editor__range-btn" tabindex="0"></div>
-                        </div>
-                      </div>
-                  </li>
-                </ul>
-              </div>
+                  </label>
+                  <input class="photo-form__range photo-form__range--crop" id="crop-range" type="range" name="filter-crop-range" min="0" max="100" step="1" aria-label="Обрезка">
+                  <input class="photo-form__range photo-form__range--fill" id="fill-range" type="range" name="filter-fill-range" min="0" max="100" step="1" aria-label="Заливка">
+                  <input class="photo-form__range photo-form__range--contrast" id="contrast-range" type="range" name="filter-contrast-range" min="0" max="100" step="1" aria-label="Контраст">
+                </div>
+              </fieldset>
               <div class="photo-editor__btns">
                 <div class="photo-editor__btns-in">
                   <button class="photo-editor__post btn btn--post" type="submit">Запостить</button>
                   <button class="photo-editor__cancel btn btn--cancel" type="reset">Отмена</button>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
         </div>
       </div>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo logo" href="index.html">
-        <svg class="logo__image logo__image--gadget" width="146.3px" height="40.375px">
-          <use xlink:href="#footer-logo-gadget"></use>
-        </svg>
-        <svg class="logo__image logo__image--desktop logo__image--footer" width="146.3px" height="40.375px">
-          <use xlink:href="#footer-logo-desktop"></use>
+      <a class="page-footer__logo" href="index.html">
+        <svg class="footer-logo" width="147" height="40">
+          <use class="footer-logo__mobile" xlink:href="#footer-logo-gadget"></use>
+          <use class="footer-logo__desktop" xlink:href="#footer-logo-desktop"></use>
         </svg>
       </a>
       <div class="page-footer__social social">
         <a class="social__media social-media--twitter" href="https://twitter.com/" target="_blank" aria-label="Twitter">
-          <svg class="social__icon  social__icon--twitter" width="17.5px" height="14.663px">
+          <svg class="social__icon social__icon--twitter" width="17.5px" height="14.663px">
             <use xlink:href="#twitter-icon"></use>
           </svg>
         </a>
         <a class="social__media social-media--facebook" href="https://facebook.com/" aria-label="Facebook">
-          <svg class="social__icon  social__icon--facebook" width="8.673px" height="18.944px">
+          <svg class="social__icon social__icon--facebook" width="8.673px" height="18.944px">
               <use xlink:href="#facebook-icon"></use>
             </svg>
         </a>

@@ -1,0 +1,340 @@
+.photo-form {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.photo-form__fieldset {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 13px;
+  border: none;
+}
+
+.photo-form__inputs {
+  width: 240px;
+  padding-top: 28px;
+  padding-right: 0;
+}
+
+.photo-form__label {
+  font-size: 0;
+  cursor: pointer;
+  color: $blue-dark;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: $pink;
+    opacity: 1;
+  }
+
+  &--crop {
+    margin-left: 13px;
+  }
+
+  &--contrast {
+    margin-right: 28px;
+  }
+}
+
+.photo-form__range {
+  margin: 0;
+  padding: 0;
+  display: none;
+  width: 240px;
+  min-height: 16px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+
+  &::-webkit-slider-runnable-track {
+    width: 240px;
+    height: 2px;
+    background: $blue-dark;
+    cursor: pointer;
+
+    animate: 0.2s;
+  }
+
+  &::-webkit-slider-thumb {
+    box-sizing: content-box;
+    width: 10px;
+    height: 10px;
+    margin-top: -6px;
+    background: $white;
+    border: 2px solid $pink;
+    border-radius: 50%;
+    cursor: pointer;
+
+    appearance: none;
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    outline: none;
+  }
+
+  &:focus::-webkit-slider-thumb {
+    background: $pink;
+  }
+
+  &::-moz-range-track {
+    width: 240px;
+    height: 2px;
+
+    background: $blue-dark;
+    cursor: pointer;
+
+    animate: 0.2s;
+  }
+
+  &::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: $white;
+    border: 2px solid $pink;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:focus::-moz-range-thumb {
+    background: $pink;
+  }
+
+  &::-ms-track {
+    width: 240px;
+    height: 2px;
+    color: transparent;
+    background: transparent;
+    border-width: 0;
+    border-color: transparent;
+    cursor: pointer;
+    animate: 0.2s;
+  }
+
+  &::-ms-fill-lower {
+    background: $blue-dark;
+  }
+
+  &::-ms-fill-upper {
+    background: $blue-dark;
+  }
+
+  &::-ms-thumb {
+    width: 10px;
+    height: 10px;
+    margin-top: -2px;
+    background: $white;
+    border: 2px solid $pink;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:focus::-ms-thumb {
+    background: $pink;
+  }
+}
+
+.photo-form__radio:checked + .photo-form__label {
+  color: $pink;
+
+  opacity: 1;
+}
+
+.photo-form__radio--crop:checked ~ .photo-form__range--crop,
+.photo-form__radio--fill:checked ~ .photo-form__range--fill,
+.photo-form__radio--contrast:checked ~ .photo-form__range--contrast {
+  display: block;
+}
+
+@media (min-width: $tablets) {
+  .photo-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    max-width: 275px;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+
+  .photo-form__fieldset {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 54px;
+    height: 173px;
+  }
+
+  .processing-form__wrapper {
+    justify-content: space-between;
+  }
+
+  .photo-form__label {
+    position: relative;
+    height: 21px;
+    margin-right: 30px;
+    color: $pink;
+    opacity: 1;
+
+    &:not(:last-of-type) {
+      margin-bottom: 50px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $pink;
+
+      opacity: 1;
+    }
+
+    &--crop {
+      margin-left: 0;
+    }
+
+
+    &--contrast {
+      align-self: center;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      width: 275px;
+      height: 1px;
+      background-color: #dddfe0;
+    }
+  }
+
+  .photo-form__label--crop svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .photo-form__label--fill svg {
+    width: 24px;
+    height: 22px;
+  }
+
+  .photo-form__label--contrast svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .photo-form__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 170px;
+    padding-top: 2px;
+    padding-right: 0;
+  }
+
+  .photo-form__range {
+    display: block;
+    width: 202px;
+    margin: 0;
+
+    &:not(:last-of-type) {
+      margin-bottom: 54px;
+    }
+
+    &::-webkit-slider-runnable-track {
+      width: 202px;
+    }
+
+    &::-moz-range-track {
+      width: 202px;
+    }
+
+    &::-ms-track {
+      width: 202px;
+    }
+  }
+}
+
+@media (min-width: $desktops) {
+  .photo-form {
+    max-width: 410px;
+    padding-top: 65px;
+    padding-left: 50px;
+  }
+
+  .photo-form__range {
+    width: 310px;
+    padding-left: 20px;
+
+    &--crop {
+      margin-top: 5px;
+      margin-bottom: 57px;
+    }
+
+    &:nth-of-type(2) {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+
+    &::-webkit-slider-runnable-track {
+      width: 288px;
+    }
+
+    &::-moz-range-track {
+      width: 288px;
+    }
+
+    &::-ms-track {
+      width: 288px;
+    }
+  }
+
+  .photo-form__fieldset {
+    width: 92px;
+    height: 200px;
+    padding-left: 105px;
+  }
+
+  .photo-form__label {
+    margin-right: 44px;
+
+    &::after {
+      bottom: -33px;
+      left: -8px;
+
+      width: 410px;
+      height: 1px;
+    }
+  }
+
+  .photo-form__label--crop svg,
+  .photo-form__label--fill svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .photo-form__label--contrast svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .photo-form__inputs {
+    height: 180px;
+    padding-top: 0;
+  }
+
+  .processing-form__button {
+    max-width: 183px;
+
+    &--submit {
+      margin: 0;
+    }
+  }
+}
