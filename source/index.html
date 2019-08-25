@@ -154,24 +154,21 @@
           <p class="advantages__description">Нам есть, что вам предложить!</p>
         </div>
         <div class="advantages__wrapper">
-          <div class="advantages__in">
-            <div class="advantages__list">
-              <div class="advantages__item advantages__item--mood">
-                <h3 class="advantages__title">Поднимает настроение</h3>
-                <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-              </div>
-              <div class="advantages__item advantages__item--world">
-                <h3 class="advantages__title">Меняет мир вокруг</h3>
-                <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
-              </div>
-              <div class="advantages__item advantages__item--friends">
-                <h3 class="advantages__title">Заводит новых друзей</h3>
-                <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              </div>
+          <div class="advantages__list">
+            <div class="advantages__item advantages__item--mood">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="advantages__item advantages__item--world">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+            </div>
+            <div class="advantages__item advantages__item--friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
           </div>
         </div>
-      </section>
       <section class="advantages__research">
         <div class="advantages__research-in">
           <div class="advantages__timer">
@@ -189,6 +186,7 @@
           </div>
         </div>
       </section>
+    </section>
       <section class="reviews">
         <div class="reviews__in">
           <div class="reviews__list">
@@ -329,10 +327,9 @@
             </div>
           </div>
         </div>
-        <p class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6034633474942!2d30.32084798726092!3d59.938721856228796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1565197147787!5m2!1suk!2sua" width="320" height="215" style="border:0" allowfullscreen></iframe>
-          <img src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта адреса">
-        </p>
+        <div class="contacts__map">
+          <div class="contacts__map--in" id="map"></div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -369,6 +366,7 @@
         </a>
       </div>
     </footer>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
     <script type="text/javascript" src="js/script.min.js"></script>
     <script type="text/javascript" src="js/picturefill.min"></script>
   </body>

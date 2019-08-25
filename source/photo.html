@@ -172,9 +172,8 @@
             </div>
           </div>
         </article>
-        <div class="gallery-photo">
           <div class ="photo-list">
-            <article class="photo  photo--card">
+            <article class="photo photo--card">
               <a class="photo__image" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
@@ -343,7 +342,6 @@
               </div>
             </article>
           </div>
-        </div>
       </div>
       <div class="upload-photo">
         <div class="upload-photo__lead">
@@ -366,19 +364,19 @@
                 <img class="photo-editor__pic" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное изображение">
               </picture>
             </figure>
-            <form class="photo-form wrapper" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="photo-form__fieldset">
-                <div class="photo-form__inputs">
-                  <input class="photo-form__radio photo-form__radio--crop hidden" name="filter-switch" id="filter-crop" type="radio" checked="">
-                  <label class="photo-form__label photo-form__label--crop" for="filter-crop">
+            <form class="photo-editor__form wrapper" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="photo-editor__fieldset">
+                <div class="photo-editor__inputs">
+                  <input class="photo-editor__radio photo-editor__radio--crop hidden" name="filter-switch" id="filter-crop" type="radio" checked="">
+                  <label class="photo-editor__label photo-editor__label--crop" for="filter-crop">
                     Обрезка
                     <svg class="photo-editor__option-icon  photo-editor__option-icon--crop  photo-editor__option-icon--active" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                         <path fill="none" d="M0,0h48v48H0V0z"/>
                         <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
                       </svg>
                   </label>
-                  <input class="photo-form__radio photo-form__radio--fill hidden" name="filter-switch" id="filter-fill" type="radio">
-                  <label class="photo-form__label photo-form__label--fill" for="filter-fill">
+                  <input class="photo-editor__radio photo-editor__radio--fill hidden" name="filter-switch" id="filter-fill" type="radio">
+                  <label class="photo-editor__label photo-editor__label--fill" for="filter-fill">
                     Заливка
                     <svg class="photo-editor__option-icon  photo-editor__option-icon--fill" version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                         <path fill="none" d="M0,0h48v48H0V0z"/>
@@ -386,17 +384,17 @@
                         <rect y="40" width="48" height="3"/>
                       </svg>
                   </label>
-                  <input class="photo-form__radio photo-form__radio--contrast hidden" name="filter-switch" id="filter-contrast" type="radio">
-                  <label class="photo-form__label photo-form__label--contrast" for="filter-contrast">
+                  <input class="photo-editor__radio photo-editor__radio--contrast hidden" name="filter-switch" id="filter-contrast" type="radio">
+                  <label class="photo-editor__label photo-editor__label--contrast" for="filter-contrast">
                     Контраст
                     <svg class="photo-editor__option-icon  photo-editor__option-icon--contrast" version="1.0" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                         <path fill="d22856" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
                         <path fill="d22856" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
                       </svg>
                   </label>
-                  <input class="photo-form__range photo-form__range--crop" id="crop-range" type="range" name="filter-crop-range" min="0" max="100" step="1" aria-label="Обрезка">
-                  <input class="photo-form__range photo-form__range--fill" id="fill-range" type="range" name="filter-fill-range" min="0" max="100" step="1" aria-label="Заливка">
-                  <input class="photo-form__range photo-form__range--contrast" id="contrast-range" type="range" name="filter-contrast-range" min="0" max="100" step="1" aria-label="Контраст">
+                  <input class="photo-editor__range photo-editor__range--crop" id="crop-range" type="range" name="filter-crop-range" min="0" max="100" step="1" aria-label="Обрезка">
+                  <input class="photo-editor__range photo-editor__range--fill" id="fill-range" type="range" name="filter-fill-range" min="0" max="100" step="1" aria-label="Заливка">
+                  <input class="photo-editor__range photo-editor__range--contrast" id="contrast-range" type="range" name="filter-contrast-range" min="0" max="100" step="1" aria-label="Контраст">
                 </div>
               </fieldset>
               <div class="photo-editor__btns">
@@ -406,6 +404,7 @@
                 </div>
               </div>
             </form>
+          </div>
         </div>
       </div>
     </main>
