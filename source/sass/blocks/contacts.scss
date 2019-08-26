@@ -165,7 +165,7 @@
   }
 
   @media (min-width: $tablets) and (min-resolution: $retina-dpi),
-    min-width: $tablets) and (min-resolution: $retina-dppx) {
+    (min-width: $tablets) and (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-tablet@2x.jpg");
     background-size: 700px auto;
   }

@@ -333,19 +333,18 @@
   padding-top: 23px;
 
   @media (min-width: $tablets) {
-    padding: 28px 58px 48px;
+    padding: 27px 58px 47px;
   }
 
   @media (min-width: $desktops) {
-    padding: 34px 58px 56px;
+    padding-top: 28px;
+    padding-bottom: 56px;
   }
 
   &--achievements {
     @media (min-width: $desktops) {
       display: flex;
       width: 100%;
-      padding-top: 28px;
-      padding-bottom: 10px;
     }
   }
 }
