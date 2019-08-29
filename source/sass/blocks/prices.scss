@@ -58,6 +58,8 @@
   padding: 20px;
   padding-top: 17px;
   background-clip: padding-box;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
 
   @media (min-width: $tablets) {
     padding-top: 10px;

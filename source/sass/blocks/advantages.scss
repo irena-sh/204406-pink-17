@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 39px;
+  padding-top: 40px;
 
   @media (min-width: $tablets) {
     padding-top: 50px;
@@ -157,6 +157,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
+      margin-left: 20px;
       width: 268px;
       height: 481px;
     }
@@ -283,7 +284,7 @@
   }
 
   @media (min-width: $tablets) {
-    padding-top: 56px;
+    padding-top: 54px;
   }
 
   @media (min-width: $desktops) {
