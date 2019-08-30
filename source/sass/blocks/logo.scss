@@ -1,0 +1,122 @@
+.logo__image {
+  &--header,
+  &--mobile,
+  &--gadget {
+    display: block;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+
+  &--mobile {
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+
+    &:active {
+      color: #ffffff;
+
+      opacity: 0.3;
+    }
+  }
+
+  &--gadget {
+    color: $blue-dark;
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+
+    &:active {
+      color: $blue-dark;
+
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .logo__image {
+    &--header {
+      padding-top: 5px;
+      height: 50px;
+    }
+
+    &--tablet,
+    &--gadget {
+      display: block;
+    }
+
+    &--mobile,
+    &--desktop {
+      display: none;
+    }
+
+    &--tablet {
+      color: #ffffff;
+
+      &:hover,
+      &:focus {
+        color: $pink;
+      }
+
+      &:active {
+        color: #ffffff;
+
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktops) {
+  .logo__image {
+    &--header {
+      padding-top: 2px;
+      height: 50px;
+    }
+
+    &--mobile,
+    &--tablet,
+    &--gadget {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+      color: #ffffff;
+
+      &:hover,
+      &:focus {
+        color: $pink;
+      }
+
+      &:active {
+        color: #ffffff;
+
+        opacity: 0.3;
+      }
+    }
+
+    &--footer {
+      color: $blue-dark;
+
+      &:hover,
+      &:focus {
+        color: $pink;
+      }
+
+      &:active {
+        color: $blue-dark;
+
+        opacity: 0.3;
+      }
+    }
+  }
+}

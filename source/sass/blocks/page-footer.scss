@@ -25,13 +25,8 @@
 }
 
 .page-footer__logo {
-  margin-bottom: 39px;
-  color: $blue-dark;
-
-  @media (min-width: $tablets) {
-    margin: 0;
-    padding-bottom: 2px;
-  }
+  display: inline-block;
+  vertical-align: top;
 }
 
 .page-footer__logo:hover .footer-logo {

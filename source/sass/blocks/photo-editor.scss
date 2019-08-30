@@ -1,5 +1,6 @@
 .photo-editor {
   background-color: $grey-light;
+  margin-bottom: 27px;
 
   @media (min-width: $tablets) {
     margin-bottom: 0;
@@ -75,7 +76,6 @@
     justify-content: flex-start;
     flex-direction: row;
     max-width: 275px;
-    padding-top: 4px;
   }
 
   @media (min-width: $desktops) {
@@ -98,9 +98,9 @@
     align-items: center;
     width: 54px;
     height: 173px;
-    margin-top: 65px;
+    margin-top: 3px;
     padding-right: 20px;
-    margin-left: 35px;
+    margin-left: 28px;
   }
 
   @media (min-width: $desktops) {
@@ -118,7 +118,7 @@
   justify-content: space-between;
   align-items: center;
   width: 240px;
-  padding-top: 28px;
+  padding-top: 40px;
   padding-right: 0;
 
   @media (min-width: $tablets) {
@@ -126,9 +126,13 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
-    height: 170px;
-    margin-top: 10px;
+    height: 210px;
+    // margin-top: 10px;
     padding-right: 0;
+  }
+
+  @media (min-width: $desktops) {
+    margin-top: 10px;
   }
 }
 
@@ -159,7 +163,7 @@
   @media (min-width: $tablets) {
     position: relative;
     height: 21px;
-    margin-right: 42px;
+    margin-right: 27px;
     color: $pink;
     opacity: 1;
 
@@ -199,7 +203,6 @@
     &::after {
       bottom: -33px;
       left: -8px;
-
       width: 410px;
       height: 1px;
     }
@@ -212,8 +215,8 @@
   display: none;
   width: 240px;
   min-height: 16px;
-  margin-top: 12px;
-  margin-bottom: 16px;
+  margin-top: 19px;
+  margin-bottom: 10px;
   background-color: transparent;
   outline: none;
   appearance: none;
@@ -308,6 +311,8 @@
     display: block;
     width: 202px;
     margin: 0;
+    margin-top: 3px;
+    padding-left: 0px;
 
     &:not(:last-of-type) {
       margin-bottom: 54px;
@@ -420,7 +425,7 @@
   }
 
   @media (min-width: $tablets) {
-    margin-top: 10px;
+    margin-top: 0px;
     padding-left: 0;
   }
 
