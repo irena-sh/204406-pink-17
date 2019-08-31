@@ -31,6 +31,7 @@
     (min-width: $desktops) and (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-desktop@2x.jpg");
     background-size: 2560px auto;
+    background-position: center 10px;
   }
 
   @media (min-width: 2560px) {
