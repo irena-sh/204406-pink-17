@@ -89,7 +89,7 @@
     background-size: 43px 47px;
 
     @media (min-width: $tablets) {
-      opacity: 0.4;
+      opacity: 1;
     }
 
     @media (min-width: $desktops) {
@@ -102,7 +102,6 @@
     background-size: 44px 41px;
   }
 }
-
 
 .download__info {
   font-weight: 300;

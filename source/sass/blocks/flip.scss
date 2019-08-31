@@ -16,6 +16,9 @@
   cursor: pointer;
   margin-left: 1px;
   margin-right: 1px;
+  background-color: transparent;
+  outline: none;
+  outline-offset: 0;
 
   &::before {
     content: "";

@@ -1,4 +1,6 @@
 .photo-list {
+  @include container;
+
   display: flex;
   flex-wrap: wrap;
 

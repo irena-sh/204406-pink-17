@@ -1,6 +1,13 @@
 .form {
-  padding-bottom: 15px;
+  @include container;
+
+  margin-bottom: 15px;
   padding-top: 0;
+
+  @media (max-width: $phones-max) {
+    width: 100%;
+    padding: 0;
+  }
 
   @media (min-width: $tablets) {
     padding-bottom: 35px;
@@ -69,7 +76,7 @@
 
     @media (min-width: $tablets) {
       order: -1;
-      padding-top: 1px;
+      padding-top: 7px;
     }
 
     @media (min-width: $desktops) {
@@ -153,6 +160,7 @@
 
     @media (min-width: $tablets) {
       padding: 0 38px;
+      margin-top: 0;
       margin-bottom: 0;
     }
   }
@@ -326,23 +334,25 @@
   padding-top: 23px;
 
   @media (min-width: $tablets) {
-    padding: 28px 58px 48px;
+    padding: 27px 58px 47px;
   }
 
   @media (min-width: $desktops) {
-    padding: 34px 58px 56px;
+    padding-top: 28px;
+    padding-bottom: 56px;
   }
 
   &--achievements {
     @media (min-width: $desktops) {
       display: flex;
       width: 100%;
-      padding-top: 28px;
-      padding-bottom: 10px;
+    }
+
+    @media (width: $desktops) {
+      padding-bottom: 16px;
     }
   }
 }
-
 
 .form__field-checkbox {
   position: relative;
@@ -440,6 +450,10 @@
   }
 
   &--apps {
+    @media (min-width: $tablets) {
+      padding: 28px 58px 48px;
+    }
+
     @media (min-width: $desktops) {
       padding: 33px 74px 44px;
     }
@@ -551,8 +565,10 @@
     }
 
     @media (min-width: $desktops) {
-      height: 128px;
+      height: 126px;
       padding-top: 10px;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -590,7 +606,7 @@
 
   @media (min-width: $desktops) {
     padding-top: 62px;
-    margin-bottom: 17px;
+    margin-bottom: 0;
   }
 }
 

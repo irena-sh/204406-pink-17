@@ -112,18 +112,14 @@
     </svg>
     <header class="page-header page-header--full">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo logo--header">
-          <svg class="logo__image logo__image--header logo__image--mobile" width="74.426px" height="22.859px">
-            <use xlink:href="#header-logo-mobile"></use>
-          </svg>
-          <svg class="logo__image logo__image--header logo__image--tablet" width="146.3px" height="40.375px">
-            <use xlink:href="#header-logo-tablet"></use>
-          </svg>
-          <svg class="logo__image logo__image--header logo__image--desktop" width="146.3px" height="40.375px">
-            <use xlink:href="#header-logo-desktop"></use>
+        <a class="page-header__logo" href="index.html">
+          <svg class="page-header__logo-img site-logo" width="147" height="40">
+            <use class="header-logo__mobile" xlink:href="#header-logo-phone"></use>
+            <use class="header-logo__tablet" xlink:href="#header-logo-tablet"></use>
+            <use class="header-logo__desktop" xlink:href="#header-logo-desktop"></use>
           </svg>
         </a>
-        <nav class="main-nav main-nav--closed  main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="main-nav__button"></span></button>
           <ul class="main-nav__menu">
             <li class="main-nav__item main-nav__item--active"><a class ="main-nav__link" href="index.html">Главная</a></li>
@@ -136,15 +132,15 @@
     </header>
     <main class="index-page">
       <header class="opening opening--short">
-        <div class="opening__in opening__in--index  opening__in--hero">
-          <h1 class="opening__title  hidden">Приложение Pink</h1>
+        <div class="opening__in opening__in--index opening__in--hero">
+          <h1 class="opening__title hidden">Приложение Pink</h1>
           <section class="download">
             <h2 class="download__title">Взгляните на жизнь иначе!</h2>
             <a class="download__downloads-btn btn btn--download" href="https://www.apple.com/itunes" title="Скачать приложение">Скачать приложение</a>
             <div class="download__sites">
-              <a class="download__site  download__site--apple" href="https://www.apple.com/itunes" title="Скачать для iPhone и iPad">iPhone</a>
-              <a class="download__site  download__site--android" href="https://play.google.com/store" title="Скачать для Android">Android</a>
-              <a class="download__site  download__site--windows" href="https://www.microsoft.com" title="Скачать для Windows Phone">Windows</a>
+              <a class="download__site download__site--apple" href="https://www.apple.com/itunes" title="Скачать для iPhone и iPad">iPhone</a>
+              <a class="download__site download__site--android" href="https://play.google.com/store" title="Скачать для Android">Android</a>
+              <a class="download__site download__site--windows" href="https://www.microsoft.com" title="Скачать для Windows Phone">Windows</a>
             </div>
             <div class="download__info">
               Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -158,26 +154,23 @@
           <p class="advantages__description">Нам есть, что вам предложить!</p>
         </div>
         <div class="advantages__wrapper">
-          <div class="advantages__in">
-            <div class="advantages__list">
-              <div class="advantages__item advantages__item--mood">
-                <h3 class="advantages__title">Поднимает настроение</h3>
-                <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-              </div>
-              <div class="advantages__item advantages__item--world">
-                <h3 class="advantages__title">Меняет мир вокруг</h3>
-                <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
-              </div>
-              <div class="advantages__item advantages__item--friends">
-                <h3 class="advantages__title">Заводит новых друзей</h3>
-                <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              </div>
+          <div class="advantages__list">
+            <div class="advantages__item advantages__item--mood">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </div>
+            <div class="advantages__item advantages__item--world">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+            </div>
+            <div class="advantages__item advantages__item--friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
           </div>
         </div>
-      </section>
-      <section class="advantages__research">
-        <div class="advantages__research-in">
+        <section class="advantages__research">
+          <div class="advantages__research-in">
           <div class="advantages__timer">
             <svg class="advantages__timer-icon" xmlns="http://www.w3.org/2000/svg" width="298" height="345.097" viewBox="0 0 298 345.097">
               <path fill="#dedede" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
@@ -193,6 +186,7 @@
           </div>
         </div>
       </section>
+    </section>
       <section class="reviews">
         <div class="reviews__in">
           <div class="reviews__list">
@@ -220,15 +214,15 @@
             <button class="reviews__nav  reviews__nav--previous" type="button">Предыдущий</button>
             <button class="reviews__nav  reviews__nav--next" type="button">Следующий</button>
           </div>
-          <div class="reviews__flip  flip">
-            <span class="flip__item  flip__item‐‐active"></span>
-            <span class="flip__item"></span>
-            <span class="flip__item"></span>
+          <div class="reviews__flip flip">
+            <button class="flip__item flip__item‐‐active hidden" type="button"></button>
+            <button class="flip__item hidden" type="button"></button>
+            <button class="flip__item hidden" type="button"></button>
           </div>
         </div>
       </section>
       <section class="prices">
-        <h2 class="prices__title  hidden">Цены</h2>
+        <h2 class="prices__title hidden">Цены</h2>
         <div class="prices__wrapper">
           <div class="prices__in">
             <table class="prices__table">
@@ -303,9 +297,9 @@
               </tr>
             </table>
             <div class="prices__flip  flip">
-              <span class="flip__item"></span>
-              <span class="flip__item  flip__item‐‐active"></span>
-              <span class="flip__item"></span>
+              <button class="flip__item hidden" type="button"></button>
+              <button class="flip__item flip__item‐‐active hidden" type="button"></button>
+              <button class="flip__item hidden" type="button"></button>
             </div>
           </div>
         </div>
@@ -333,13 +327,12 @@
             </div>
           </div>
         </div>
-        <p class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.6034633474942!2d30.32084798726092!3d59.938721856228796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1565197147787!5m2!1suk!2sua" width="320" height="215" style="border:0" allowfullscreen></iframe>
-          <img src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта адреса">
-        </p>
+        <div class="contacts__map">
+          <div class="contacts__map--in" id="map"></div>
+        </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <a class="page-footer__logo logo" href="index.html">
         <svg class="logo__image logo__image--gadget" width="146.3px" height="40.375px">
           <use xlink:href="#footer-logo-gadget"></use>
@@ -375,6 +368,7 @@
         </a>
       </div>
     </footer>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
     <script type="text/javascript" src="js/script.min.js"></script>
     <script type="text/javascript" src="js/picturefill.min"></script>
   </body>

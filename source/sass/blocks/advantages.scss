@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 39px;
+  padding-top: 40px;
 
   @media (min-width: $tablets) {
     padding-top: 50px;
@@ -81,36 +81,27 @@
   }
 }
 
-.advantages__in {
-  @include container;
-  text-align: center;
-
-  @media (min-width: $tablets) {
-    padding-top: 75px;
-  }
-
-  @media (min-width: $desktops) {
-    padding-top: 0;
-  }
-}
-
 .advantages__list {
+  @include container;
+
+  text-align: center;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
   @media (min-width: $tablets) {
+    padding-top: 75px;
     padding-left: 50%;
-    text-align: left;
     padding-bottom: 42px;
+    text-align: left;
   }
 
   @media (min-width: $desktops) {
     flex-direction: row;
     padding: 0;
-    text-align: center;
     top: 12px;
+    padding-left: 10px;
   }
 
   &::after {
@@ -166,6 +157,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
+      margin-left: 20px;
       width: 268px;
       height: 481px;
     }
@@ -292,7 +284,7 @@
   }
 
   @media (min-width: $tablets) {
-    padding-top: 56px;
+    padding-top: 54px;
   }
 
   @media (min-width: $desktops) {

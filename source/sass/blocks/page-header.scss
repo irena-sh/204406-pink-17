@@ -39,6 +39,7 @@
   margin-bottom: 22px;
   margin-left: 20px;
   margin-right: 20px;
+  color: #ffffff;
 
   @media (max-width: $phones-max) {
     margin-left: 21px;
@@ -46,7 +47,7 @@
 
   @media (min-width: $tablets) {
     margin-top: 27px;
-    margin-bottom: 49px;
+    margin-bottom: 45px;
     width: 147px;
     height: 40px;
   }
@@ -56,8 +57,48 @@
   }
 }
 
-.page-header__img {
+.page-header__logo:hover .page-header__logo-img {
+  color: $pink;
+}
+
+.page-header__logo:active .page-header__logo-img {
+  @media (min-width: $tablets) and (max-width: $desktops) {
+    opacity: 0.3;
+  }
+}
+
+.page-header__logo-img {
+  color: #ffffff;
+
+  @media (max-width: $phones-max) {
+    width: 70px;
+    height: 22px;
+  }
+}
+
+.header-logo:hover {
+  cursor: pointer;
+}
+
+.header-logo__mobile {
   @media (min-width: $tablets) {
-    padding-top: 17px;
+    display: none;
+  }
+}
+
+.header-logo__tablet {
+  display: none;
+
+  @media (min-width: $tablets) and (max-width: $desktops) {
+    display: block;
+  }
+}
+
+.header-logo__desktop {
+  display: none;
+
+  @media (min-width: $desktops) {
+    display: block;
+    padding-top: 5px;
   }
 }

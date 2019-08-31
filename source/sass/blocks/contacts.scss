@@ -8,7 +8,6 @@
 
   @media (min-width: $desktops) {
     padding-top: 65px;
-    margin-bottom: 20px;
   }
 }
 
@@ -53,7 +52,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 2px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablets) {
     padding-bottom: 28px;
@@ -61,7 +60,8 @@
   }
 
   @media (min-width: $desktops) {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
+    padding-left: 2px;
   }
 }
 
@@ -73,7 +73,7 @@
     margin-bottom: 0;
 
     &--phone {
-      margin-right: 8px;
+      margin-right: 10px;
     }
 
     &--email {
@@ -132,12 +132,26 @@
 
 .contacts__map {
   position: relative;
-  height: 215px;
-  margin: 0;
+  height: 200px;
+  overflow: hidden;
+
+  @media (min-width: $tablets) {
+    height: 372px;
+  }
+
+  @media (min-width: $desktops) {
+    height: 502px;
+  }
+}
+
+.contacts__map--in {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 225px;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  overflow: hidden;
+  background-position: center -220px;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
@@ -146,17 +160,9 @@
   }
 
   @media (min-width: $tablets) {
-    height: 372px;
+    min-height: 420px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-position: center -349px;
-
-    &::before {
-      height: 90px;
-    }
-
-    iframe {
-      height: 395px;
-    }
   }
 
   @media (min-width: $tablets) and (min-resolution: $retina-dpi),
@@ -166,17 +172,9 @@
   }
 
   @media (min-width: $desktops) {
-    height: 500px;
+    min-height: 561px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-position: center -257px;
-
-    &::before {
-      height: 120px;
-    }
-
-    iframe {
-      height: 520px;
-    }
+    background-position: center -277px;
   }
 
   @media (min-width: $desktops) and (min-resolution: $retina-dpi),
@@ -188,38 +186,41 @@
   &::before {
     content: "";
     position: absolute;
-    z-index: 20;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 45px;
-    background: url("../img/bg-triangle-white-footer.svg") center top no-repeat;
-    background-size: cover;
+    height: 33px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 33px;
+    z-index: 1;
+
+    @media (min-width: $tablets) {
+      height: 68px;
+      background-size: 100% 68px;
+    }
+
+    @media (min-width: $desktops) {
+      height: 102px;
+      background-size: 100% 102px;
+    }
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     width: 36px;
-    height: 35px;
+    height: 36px;
     transform: translate(-50%, -50%);
     background-image: url("../img/icon-map-marker.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
-    z-index: 30;
-
-    @media (min-width: $tablets) {
-      margin-top: 24px;
-    }
-
-    @media (min-width: $desktops) {
-      margin-top: 31px;
-    }
   }
 
-  iframe {
-    position: relative;
-    z-index: 10;
-    width: 100%;
+  &--map-loaded::after {
+    display: none;
   }
 }
