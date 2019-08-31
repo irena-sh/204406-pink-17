@@ -1,15 +1,15 @@
 .opening {
-  padding-top: 66px;
   background-color: $blue-dark;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   color: $white;
+  padding-top: 66px;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 700px auto;
+    background-size: 100%;
   }
 
   @media (min-width: $tablets) {
