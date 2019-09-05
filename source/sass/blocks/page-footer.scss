@@ -27,6 +27,7 @@
 .page-footer__logo {
   display: inline-block;
   vertical-align: top;
+  color: $blue-dark;
 }
 
 .page-footer__logo:hover .footer-logo {
@@ -34,7 +35,23 @@
 }
 
 .page-footer__logo:active .footer-logo {
-  opacity: 0.3;
+  @media (min-width: $tablets) and (max-width: $desktops) {
+    opacity: 0.3;
+  }
+}
+
+.footer-logo__mobile {
+  @media (min-width: $desktops) {
+    display: none;
+  }
+}
+
+.footer-logo__desktop {
+  display: none;
+
+  @media (width: $desktops) {
+    display: block;
+  }
 }
 
 .page-footer__social {

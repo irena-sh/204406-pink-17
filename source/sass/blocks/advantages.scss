@@ -76,7 +76,7 @@
   }
 
   @media (min-width: $desktops) {
-    @include angled-bg ($height: 131px, $top: 7px);
+    @include angled-bg ($height: 74px, $top: 39px);
     padding-top: 25px;
   }
 }
@@ -157,7 +157,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      margin-left: 20px;
+      // margin-left: 20px;
       width: 268px;
       height: 481px;
     }
