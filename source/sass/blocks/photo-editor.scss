@@ -73,15 +73,18 @@
   @media (min-width: $tablets) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: row;
     max-width: 275px;
+    margin-left: 20px;
+    margin-top: 26px;
   }
 
   @media (min-width: $desktops) {
     max-width: 410px;
     margin-top: 0;
     margin-left: 0;
+    align-items: center;
   }
 }
 
@@ -98,7 +101,7 @@
     align-items: center;
     width: 54px;
     height: 173px;
-    margin-top: 3px;
+    margin-top: 0;
     padding-right: 20px;
     margin-left: 28px;
   }
@@ -189,7 +192,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -22px;
+      bottom: -27px;
       left: 0;
       width: 275px;
       height: 1px;
@@ -313,6 +316,7 @@
     margin: 0;
     margin-top: 3px;
     padding-left: 0;
+    padding-top: 2px;
 
     &:not(:last-of-type) {
       margin-bottom: 54px;
@@ -379,12 +383,12 @@
 
   .photo-editor__label--fill svg {
     width: 24px;
-    height: 25px;
+    height: 35px;
   }
 
   .photo-editor__label--contrast svg {
     width: 16px;
-    height: 16px;
+    height: 22px;
   }
 }
 
@@ -450,6 +454,7 @@
     padding-left: 25px;
     width: 100%;
     padding-right: 13px;
+    padding-top: 45px;
   }
 
   @media (min-width: $desktops) {

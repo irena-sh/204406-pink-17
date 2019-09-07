@@ -57,10 +57,10 @@
 
 .download__downloads-btn {
   width: 100%;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 
   @media (max-width: $phones-max) {
-    @include container-phones (20px);
+    // @include container-phones (20px);
   }
 
   @media (min-width: $tablets) {
@@ -76,7 +76,7 @@
   font-size: 0;
 
   @media (max-width: $phones-max) {
-    @include container-phones (20px);
+    // @include container-phones (20px);
   }
 }
 

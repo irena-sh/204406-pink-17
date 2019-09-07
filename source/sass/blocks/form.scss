@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktops) {
-    padding-bottom: 0;
+    padding-bottom: 5px;
     padding-top: 0;
   }
 }
@@ -115,20 +115,17 @@
 
 .form__title {
   width: 100%;
-  padding-top: 4px;
-  padding-bottom: 16px;
+  padding-top: 0px;
+  padding-bottom: 5px;
   text-align: center;
   color: $pink;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-
-  @media (max-width: $phones-max) {
-    @include container-phones(58px);
-    padding-left: 12px;
-  }
-
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 2px;
 
   @media (min-width: $tablets) {
     position: relative;
@@ -533,12 +530,16 @@
 }
 
 .form__textarea-fields {
+  @media (min-width: $phones) {
+    padding-top: 6px;
+  }
+
   @media (min-width: $tablets) {
     padding: 21px 58px 51px;
   }
 
   @media (min-width: $desktops) {
-    padding-top: 25px;
+    padding-top: 15px;
     padding-bottom: 43px;
   }
 }
@@ -605,7 +606,7 @@
   }
 
   @media (min-width: $desktops) {
-    padding-top: 62px;
+    padding-top: 67px;
     margin-bottom: 0;
   }
 }

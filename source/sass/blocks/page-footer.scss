@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $desktops) {
-    padding-top: 70px;
+    padding-top: 50px;
     padding-bottom: 68px;
   }
 }
@@ -47,7 +47,9 @@
 }
 
 .footer-logo__desktop {
-  display: none;
+  @media (max-width: $tablets-max) {
+    display: none;
+  }
 
   @media (width: $desktops) {
     display: block;
@@ -55,7 +57,7 @@
 }
 
 .page-footer__social {
-  margin-top: 40px;
+  margin-top: 35px;
 
   @media (min-width: $tablets) {
     margin-top: 3px;
