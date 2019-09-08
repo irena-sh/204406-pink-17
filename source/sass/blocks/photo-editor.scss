@@ -8,7 +8,7 @@
 
   @media (min-width: $desktops) {
     background-color: transparent;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
   }
 }
 
@@ -34,6 +34,7 @@
 }
 
 .photo-editor__image {
+  margin: 0;
   padding-top: 20px;
   width: 280px;
 
@@ -176,9 +177,7 @@
 
     &:hover,
     &:focus {
-      color: $pink;
-
-      opacity: 1;
+      color: $blue-dark;
     }
 
     &--crop {

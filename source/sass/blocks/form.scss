@@ -115,7 +115,7 @@
 
 .form__title {
   width: 100%;
-  padding-top: 0px;
+  padding-top: 0;
   padding-bottom: 5px;
   text-align: center;
   color: $pink;
@@ -567,7 +567,7 @@
 
     @media (min-width: $desktops) {
       height: 126px;
-      padding-top: 10px;
+      padding-top: 16px;
       padding-bottom: 0;
       margin-bottom: 0;
     }

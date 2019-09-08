@@ -67,6 +67,8 @@
 }
 
 .photo__panorama-pic {
+  max-width: 100%;
+  height: auto;
   display: block;
 
   @media (min-width: $tablets) {
@@ -113,6 +115,8 @@
 
 .photo__pic {
   display: block;
+  max-width: 100%;
+  height: auto;
 
   @media (min-width: $tablets) {
     position: relative;

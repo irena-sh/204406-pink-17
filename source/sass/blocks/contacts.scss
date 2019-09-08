@@ -8,6 +8,7 @@
 
   @media (min-width: $desktops) {
     padding-top: 65px;
+    margin-bottom: 20px;
   }
 }
 
@@ -193,7 +194,7 @@
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100% 33px;
+    background-size: 100%;
     z-index: 1;
 
     @media (min-width: $tablets) {
