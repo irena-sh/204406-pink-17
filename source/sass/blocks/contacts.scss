@@ -3,11 +3,11 @@
   text-align: center;
 
   @media (min-width: $tablets) {
-    padding-top: 45px;
+    padding-top: 47px;
   }
 
   @media (min-width: $desktops) {
-    padding-top: 65px;
+    padding-top: 67px;
     margin-bottom: 20px;
   }
 }
@@ -194,7 +194,7 @@
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100%;
+    background-size: 100% 33px;
     z-index: 1;
 
     @media (min-width: $tablets) {
